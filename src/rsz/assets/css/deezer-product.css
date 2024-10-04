@@ -1,0 +1,63 @@
+/**
+ Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#common_weight_name_mapping
+*/
+
+/* Deezer Light */
+@font-face {
+    font-display: swap;
+    font-family: "Deezer Product";
+    font-style: normal;
+    font-weight: 300;
+    src: url("https://cdn-assets.dzcdn.net/common/fonts/deezer-product/DeezerProduct-Light.efd35bdb0915246feab41d1358b8cd5085fd20cd.woff2")
+    format("woff2"),
+    url("https://cdn-assets.dzcdn.net/common/fonts/deezer-product/DeezerProduct-Light.cfee2dd7c4becdda1c9e8e9d9f4b6ba61f361bc3.woff")
+    format("woff");
+}
+
+/* Deezer Regular */
+@font-face {
+    font-display: swap;
+    font-family: "Deezer Product";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdn-assets.dzcdn.net/common/fonts/deezer-product/DeezerProduct-Regular.70f89899e36fd31e61516d3d8735072f84e1834c.woff2")
+    format("woff2"),
+    url("https://cdn-assets.dzcdn.net/common/fonts/deezer-product/DeezerProduct-Regular.fdde3d408773a19ee0b563751b99c4480516924d.woff")
+    format("woff");
+}
+
+/* Deezer Medium */
+@font-face {
+    font-display: swap;
+    font-family: "Deezer Product";
+    font-style: normal;
+    font-weight: 500;
+    src: url("https://cdn-assets.dzcdn.net/common/fonts/deezer-product/DeezerProduct-Medium.daf0b392651bce99e22271f127d6798f00f7a1f7.woff2")
+    format("woff2"),
+    url("https://cdn-assets.dzcdn.net/common/fonts/deezer-product/DeezerProduct-Medium.58cb919ec641feddea21f6a7afd51060691af3ce.woff")
+    format("woff");
+}
+
+/* Deezer Bold */
+@font-face {
+    font-display: swap;
+    font-family: "Deezer Product";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://cdn-assets.dzcdn.net/common/fonts/deezer-product/DeezerProduct-Bold.12a16421bc0c1a0e11b324a8ba1f3035aae0ada2.woff2")
+    format("woff2"),
+    url("https://cdn-assets.dzcdn.net/common/fonts/deezer-product/DeezerProduct-Bold.14ce4332645cb3ca0f164d257e880853ed262798.woff")
+    format("woff");
+}
+
+/* Deezer Extra Bold */
+@font-face {
+    font-display: swap;
+    font-family: "Deezer Product";
+    font-style: normal;
+    font-weight: 800;
+    src: url("https://cdn-assets.dzcdn.net/common/fonts/deezer-product/DeezerProduct-Extrabold.ff5d8428e4fe802f91d53a06857feb145b0a435d.woff2")
+    format("woff2"),
+    url("https://cdn-assets.dzcdn.net/common/fonts/deezer-product/DeezerProduct-Extrabold.a1c06d3aa3a0d709767a0e592c1bac25af1f6944.woff")
+    format("woff");
+}

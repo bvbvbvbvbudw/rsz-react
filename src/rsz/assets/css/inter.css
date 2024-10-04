@@ -1,0 +1,51 @@
+/* Inter Regular */
+
+@font-face {
+    font-display: swap;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdn-assets.dzcdn.net/common/fonts/inter/inter-regular.e226d8e173551f5742af606dc1d0b184fe38ef38.woff2")
+    format("woff2"),
+    url("https://cdn-assets.dzcdn.net/common/fonts/inter/inter-regular.2ac284d7ba9dd63e691ea7afc14d163891a6a9bb.woff")
+    format("woff");
+}
+
+/* Inter Semibold */
+
+@font-face {
+    font-display: swap;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    src: url("https://cdn-assets.dzcdn.net/common/fonts/inter/inter-semibold.621d67ce7463019c98c7473ab8677841ff24b1fd.woff2")
+    format("woff2"),
+    url("https://cdn-assets.dzcdn.net/common/fonts/inter/inter-semibold.12858343548d78b46410bee99a30aed4ba830817.woff")
+    format("woff");
+}
+
+/* Inter Bold */
+
+@font-face {
+    font-display: swap;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://cdn-assets.dzcdn.net/common/fonts/inter/inter-bold.041da318cff68d04380ea1e5d16390c5de1fa47d.woff2")
+    format("woff2"),
+    url("https://cdn-assets.dzcdn.net/common/fonts/inter/inter-bold.8fbb01ba66d2a2ed461d4459f73236231bd5188f.woff")
+    format("woff");
+}
+
+/* Inter Black */
+
+@font-face {
+    font-display: swap;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("https://cdn-assets.dzcdn.net/common/fonts/inter/inter-black.94e79dcafe6559210293515752fcae20329e1083.woff2")
+    format("woff2"),
+    url("https://cdn-assets.dzcdn.net/common/fonts/inter/inter-black.50170d884099471742152d0191b49a9a80873200.woff")
+    format("woff");
+}
