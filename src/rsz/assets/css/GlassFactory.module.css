@@ -1,0 +1,352 @@
+.banner {
+    background-color: #f8f9fb;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 1000px;
+    width: 100%;
+    padding-bottom: 61px;
+}
+
+@media (max-width: 991px) {
+    .mainContent {
+        max-width: 100%;
+    }
+}
+
+.backgroundImage {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header {
+    position: relative;
+    background-color: rgba(24, 2, 0, 0.5);
+    display: flex;
+    min-height: 100px;
+    width: 100%;
+    align-items: center;
+    gap: 40px 100px;
+    font-weight: 500;
+    text-transform: uppercase;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 99px;
+}
+
+@media (max-width: 991px) {
+    .header {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+.logo {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: auto 0;
+    font: 26px Fixel Display, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .logo {
+        max-width: 100%;
+    }
+}
+
+.logoImage {
+    aspect-ratio: 0.85;
+    object-fit: contain;
+    object-position: center;
+    width: 51px;
+    align-self: stretch;
+    margin: auto 0;
+}
+
+.companyName {
+    transform: rotate(-1.6081230200044232E16Rad);
+    align-self: stretch;
+    margin: auto 0;
+}
+
+@media (max-width: 991px) {
+    .companyName {
+        max-width: 100%;
+    }
+}
+
+.navigation {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    align-items: center;
+    gap: 40px 70px;
+    letter-spacing: 0.46px;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: auto 0;
+    font: 15px/26px Noto Sans, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .navigation {
+        max-width: 100%;
+    }
+}
+
+.navItem {
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 8px 11px;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .navItem {
+        white-space: initial;
+    }
+}
+
+.navItemBase {
+    align-self: stretch;
+    gap: 8px;
+}
+
+@media (max-width: 991px) {
+    .navItemBase {
+        white-space: initial;
+    }
+}
+
+.activeNavItem {
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #180200;
+    white-space: nowrap;
+    padding: 8px 22px;
+}
+
+@media (max-width: 991px) {
+    .activeNavItem {
+        white-space: initial;
+        padding: 0 20px;
+    }
+}
+
+.languageButton {
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #180200;
+    white-space: nowrap;
+    margin: auto 0;
+    padding: 8px 22px;
+}
+
+@media (max-width: 991px) {
+    .languageButton {
+        white-space: initial;
+        padding: 0 20px;
+    }
+}
+
+.languageButtonContent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .languageButtonContent {
+        white-space: initial;
+    }
+}
+
+.languageIcon {
+    aspect-ratio: 0.82;
+    object-fit: contain;
+    object-position: center;
+    width: 18px;
+    align-self: stretch;
+    margin: auto 0;
+}
+
+.languageText {
+    align-self: stretch;
+    margin: auto 0;
+}
+
+.heroSection {
+    position: relative;
+    display: flex;
+    margin-top: 269px;
+    width: 897px;
+    max-width: 100%;
+    flex-direction: column;
+    font-family: Fixel, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .heroSection {
+        margin-top: 40px;
+    }
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 991px) {
+    .heroContent {
+        max-width: 100%;
+    }
+}
+
+.heroText {
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    min-height: 261px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 58px 20px 58px 99px;
+}
+
+@media (max-width: 991px) {
+    .heroText {
+        max-width: 100%;
+        padding-left: 20px;
+    }
+}
+
+.heroTextContent {
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+    .heroTextContent {
+        max-width: 100%;
+    }
+}
+
+.foundationYear {
+    display: flex;
+    min-width: 240px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.yearNumber {
+    transform: rotate(-1.6081230200044232E16Rad);
+    font-size: 130px;
+    font-weight: 600;
+    letter-spacing: 3.9px;
+    border: 5px solid #fff;
+}
+
+@media (max-width: 991px) {
+    .yearNumber {
+        font-size: 40px;
+    }
+}
+
+.yearLabel {
+    transform: rotate(-1.6081230200044232E16Rad);
+    color: #fff;
+    font-size: 42px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+
+.heroSlogan {
+    border-color: #fff;
+    border-left-width: 2px;
+    min-width: 240px;
+    padding-left: 20px;
+    font-size: 48px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 56px;
+    width: 459px;
+}
+
+@media (max-width: 991px) {
+    .heroSlogan {
+        max-width: 100%;
+        font-size: 40px;
+        line-height: 52px;
+    }
+}
+
+.tagline {
+    position: relative;
+    transform: rotate(-1.6081230200044232E16Rad);
+    color: #fff;
+    text-shadow: 0px 4px 10px #000;
+    text-align: center;
+    align-self: end;
+    margin: 246px 112px 0 0;
+    font: 400 76px/1 Marianna, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .tagline {
+        max-width: 100%;
+        font-size: 40px;
+        margin: 40px 10px 0 0;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

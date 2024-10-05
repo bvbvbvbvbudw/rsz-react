@@ -1,0 +1,58 @@
+.imageGallery {
+    width: 57%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.imageWrapper {
+    position: relative;
+    min-height: 1000px;
+    width: 100%;
+}
+
+.backgroundImage,
+.overlayImage,
+.logoBackground {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlayWrapper {
+    position: relative;
+    height: 100%;
+}
+
+.logoOverlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 395px 80px 251px;
+}
+
+.logoImage {
+    width: 100%;
+    aspect-ratio: 2.24;
+    object-fit: contain;
+    background-blend-mode: soft-light;
+    margin-bottom: -50px;
+}
+
+@media (max-width: 991px) {
+    .imageGallery {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .logoOverlay {
+        padding: 100px 20px;
+    }
+
+    .logoImage {
+        margin-bottom: 10px;
+    }
+}
