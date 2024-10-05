@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Fixel';
+    font-style: normal;
+    font-weight: 400;
+    src: url("FixelText-SemiBold.otf");
+    src: url("FixelText-SemiBold.woff2");
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap');
+}
+
+@font-face {
+    font-family: 'Marianna';
+    font-style: normal;
+    font-weight: 400;
+    src: url("marianna.ttf");
+}
