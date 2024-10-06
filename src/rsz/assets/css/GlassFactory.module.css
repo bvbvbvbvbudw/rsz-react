@@ -32,7 +32,8 @@
 }
 
 .header {
-    position: relative;
+    position: fixed;
+    z-index: 9999;
     background-color: rgba(24, 2, 0, 0.5);
     display: flex;
     min-height: 100px;
@@ -245,13 +246,13 @@
 
 .heroText {
     border-radius: 2px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     min-height: 261px;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 58px 20px 58px 99px;
+    padding: 0 20px 0 99px;
 }
 
 @media (max-width: 991px) {
@@ -334,7 +335,7 @@
     left: 53.78%;
     right: 5.86%;
     top: 87.62%;
-    bottom: 6.12%;
+    bottom: 10.12%;
 
     transform: rotate(-1.6081230200044232 E16Rad);
     color: #fff;

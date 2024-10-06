@@ -13,7 +13,7 @@ function GlassFactory() {
                     className={styles.backgroundImage}
                     alt=""
                 />
-                <Header />
+                {/*<Header />*/}
                 <HeroSection />
             </div>
         </div>

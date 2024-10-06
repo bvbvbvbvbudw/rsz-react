@@ -11,7 +11,7 @@ import ProductionWine from "./ProductionWine";
 const MainPage = () => {
     return (
         <div className="wrapper">
-            {/*<Header />*/}
+            <Header />
             <GlassFactory/>
             <GlassPage/>
             {/*// TODO: page number 3*/}
