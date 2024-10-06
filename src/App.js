@@ -16,7 +16,7 @@ import MainPage from "./rsz/pages/MainPage"; // TODO: сделать джску 
 // footer
 import Footer from "./rsz/Components/footer/Footer"; // TODO: поправить бекграунд
 
-// TODO: делать все с анимациями . Переименовать все файлы правильно, чтобы все было понятно
+// TODO: делать все с анимациями . Переименовать все файлы правильно, чтобы все было понятно. Перечитать тз . Сделать логику чтобы по апи загружались сохранялись картинки которые бекграунд Главной
 
 import './rsz/assets/fonts/fonts.css';
 export default function App() {
