@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../assets/css/GlassFactory.module.css';
-import Header from '../Components/header/Header';
-import HeroSection from '../Components/content/HeroSection';
+import styles from '../../../assets/css/GlassFactory.module.css';
+import Header from '../../header/Header';
+import HeroSection from './HeroSection';
 
 function GlassFactory() {
     return (

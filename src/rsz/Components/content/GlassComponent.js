@@ -13,7 +13,7 @@ const GlassComponent = () => {
                     className={styles.backgroundImage}
                     alt=""
                 />
-                <Header />
+                {/*<Header />*/}
                 <ContentSection />
             </main>
         </div>

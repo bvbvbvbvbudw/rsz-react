@@ -4,6 +4,7 @@
     flex-direction: column;
     overflow: hidden;
     max-width: none !important;
+    height: 100vh;
 }
 
 .mainContent {
@@ -216,6 +217,7 @@
     display: flex;
     width: 992px;
     max-width: 100%;
+    height: 100vh;
     flex-direction: column;
     margin: 120px 0 -38px 99px;
 }

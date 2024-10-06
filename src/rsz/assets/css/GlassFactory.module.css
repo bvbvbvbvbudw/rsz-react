@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    height: 100vh;
 }
 
 .mainContent {
@@ -11,6 +12,7 @@
     position: relative;
     min-height: 1000px;
     width: 100%;
+    /*height: 100vh;*/
     padding-bottom: 61px;
 }
 
@@ -34,7 +36,7 @@
     background-color: rgba(24, 2, 0, 0.5);
     display: flex;
     min-height: 100px;
-    width: 100%;
+    width: 90vw;
     align-items: center;
     gap: 40px 100px;
     font-weight: 500;
@@ -72,7 +74,7 @@
 
 .logoImage {
     aspect-ratio: 0.85;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     width: 51px;
     align-self: stretch;
@@ -80,7 +82,7 @@
 }
 
 .companyName {
-    transform: rotate(-1.6081230200044232E16Rad);
+    transform: rotate(-1.6081230200044232 E16Rad);
     align-self: stretch;
     margin: auto 0;
 }
@@ -211,11 +213,14 @@
 }
 
 .heroSection {
-    position: relative;
+    position: absolute;
+    top: 30%;
+    left: 0;
     display: flex;
-    margin-top: 269px;
-    width: 897px;
+    /*margin-top: 269px;*/
+    width: auto;
     max-width: 100%;
+    height: 300px;
     flex-direction: column;
     font-family: Fixel, sans-serif;
 }
@@ -227,6 +232,7 @@
 }
 
 .heroContent {
+    height: 200px;
     display: flex;
     flex-direction: column;
 }
@@ -278,11 +284,15 @@
 }
 
 .yearNumber {
-    transform: rotate(-1.6081230200044232E16Rad);
+    transform: rotate(-1.6081230200044232 E16Rad);
     font-size: 130px;
     font-weight: 600;
     letter-spacing: 3.9px;
-    border: 5px solid #fff;
+    -webkit-text-stroke: 5px #fff;
+    color: transparent;
+    padding: 0;
+    margin: 0;
+    /*border: 5px solid #fff;*/
 }
 
 @media (max-width: 991px) {
@@ -292,16 +302,14 @@
 }
 
 .yearLabel {
-    transform: rotate(-1.6081230200044232E16Rad);
+    transform: rotate(-1.6081230200044232 E16Rad);
     color: #fff;
     font-size: 42px;
     font-weight: 300;
-    margin-top: 25px;
+    margin-top: -55px;
 }
 
 .heroSlogan {
-    border-color: #fff;
-    border-left-width: 2px;
     min-width: 240px;
     padding-left: 20px;
     font-size: 48px;
@@ -310,6 +318,7 @@
     text-transform: uppercase;
     line-height: 56px;
     width: 459px;
+    border-left: 2px solid #fff;
 }
 
 @media (max-width: 991px) {
@@ -321,13 +330,17 @@
 }
 
 .tagline {
-    position: relative;
-    transform: rotate(-1.6081230200044232E16Rad);
+    position: absolute;
+    left: 53.78%;
+    right: 5.86%;
+    top: 87.62%;
+    bottom: 6.12%;
+
+    transform: rotate(-1.6081230200044232 E16Rad);
     color: #fff;
     text-shadow: 0px 4px 10px #000;
     text-align: center;
     align-self: end;
-    margin: 246px 112px 0 0;
     font: 400 76px/1 Marianna, -apple-system, Roboto, Helvetica, sans-serif;
 }
 

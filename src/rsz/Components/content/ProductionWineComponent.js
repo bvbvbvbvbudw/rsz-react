@@ -13,7 +13,7 @@ const ProductionWineComponent = () => {
                     alt=""
                     className={styles.backgroundImage}
                 />
-                <Header />
+                {/*<Header />*/}
                 <main className={styles.contentWrapper}>
                     <div className={styles.columnLayout}>
                         <section className={styles.leftColumn}>

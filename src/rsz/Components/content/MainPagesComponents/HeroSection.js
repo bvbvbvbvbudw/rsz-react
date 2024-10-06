@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from '../../assets/css/GlassFactory.module.css';
+import styles from '../../../assets/css/GlassFactory.module.css';
 
 function HeroSection() {
-    return (
+    return (<>
         <section className={styles.heroSection}>
             <div className={styles.heroContent}>
                 <div className={styles.heroText}>
@@ -17,9 +17,10 @@ function HeroSection() {
                     </div>
                 </div>
             </div>
-            <p className={styles.tagline}>Скло як витвір мистецтва</p>
         </section>
-    );
+    <p className={styles.tagline}>Скло як витвір мистецтва</p>
+
+   </> );
 }
 
 export default HeroSection;

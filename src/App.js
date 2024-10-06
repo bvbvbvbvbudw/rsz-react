@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // TODO: всем надо сделать адаптив. поправить хедер. сделать 3 страницу. на 4 странице бутылку. Сделать норм отображение всех страниц вместе. Сделать смену языков логику
 // 1 page
-import GlassFactory from "./rsz/pages/GlassFactory";
+import GlassFactory from "./rsz/Components/content/MainPagesComponents/GlassFactory";
 // 2 page
 import GlassPage from "./rsz/pages/GlassPage";
 // 3 page
@@ -17,6 +17,8 @@ import MainPage from "./rsz/pages/MainPage"; // TODO: сделать джску 
 import Footer from "./rsz/Components/footer/Footer"; // TODO: поправить бекграунд
 
 // TODO: делать все с анимациями . Переименовать все файлы правильно, чтобы все было понятно
+
+import './rsz/assets/fonts/fonts.css';
 export default function App() {
 
   return (
