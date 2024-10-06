@@ -1,0 +1,27 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 216px;
+}
+
+.paginationDot {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #180200;
+    border-radius: 50%;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.paginationDot.active {
+    background-color: #180200;
+}
+
+@media (max-width: 991px) {
+    .pagination {
+        margin-top: 40px;
+    }
+}

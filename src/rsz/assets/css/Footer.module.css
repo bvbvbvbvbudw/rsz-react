@@ -1,11 +1,23 @@
 .footer {
-    background-color: rgba(234, 242, 229, 1);
+    /* футер_1920 */
+
+    /* Auto layout */
     display: flex;
-    align-items: center;
-    gap: 40px 100px;
+    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
     padding: 20px 99px;
+    /*gap: 348px;*/
+
+    position: absolute;
+    /*width: 100vw;*/
+    height: 300.31px;
+    /*left: calc(50% - 1920px/2);*/
+    /*bottom: -0.31px;*/
+
+    background: linear-gradient(0deg, rgba(24, 2, 0, 0.2), rgba(24, 2, 0, 0.2)), linear-gradient(0deg, rgba(0, 167, 0, 0.3), rgba(0, 167, 0, 0.3)), #EAF2E5;
+    background-blend-mode: normal, normal, overlay, normal, normal;
+
 }
 
 @media (max-width: 991px) {

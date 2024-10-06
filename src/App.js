@@ -19,6 +19,7 @@ import Footer from "./rsz/Components/footer/Footer"; // TODO: поправить
 // TODO: делать все с анимациями . Переименовать все файлы правильно, чтобы все было понятно. Перечитать тз . Сделать логику чтобы по апи загружались сохранялись картинки которые бекграунд Главной
 
 import './rsz/assets/fonts/fonts.css';
+// import './rsz/assets/css/style.css';
 export default function App() {
 
   return (

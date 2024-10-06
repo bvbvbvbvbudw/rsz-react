@@ -1,0 +1,54 @@
+.worldMapContainer {
+    position: relative;
+    width: 50%;
+    height: 1000px;
+    overflow: hidden;
+}
+
+.mapBackground,
+.mapOverlay,
+.mapContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mapContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 395px 80px 251px;
+}
+
+.mapDecoration {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.partnerHighlight {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-top: -50px;
+}
+
+@media (max-width: 991px) {
+    .worldMapContainer {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .mapContent {
+        padding: 100px 20px;
+    }
+
+    .partnerHighlight {
+        margin-top: 10px;
+    }
+}

@@ -15,7 +15,7 @@ const contactItems = [
 ];
 
 const Footer = () => (
-    <footer className={styles.footer}>
+    <footer style={{position: 'relative'}} className={styles.footer}>
         <nav className={styles.navGroup}>
             {navItems.map((column, columnIndex) => (
                 <div key={columnIndex} className={styles.navColumn}>

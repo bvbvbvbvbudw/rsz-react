@@ -1,4 +1,21 @@
-main {
-    width: 90vw;
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.wrapper {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
     height: 100vh;
+}
+
+.section {
+    height: 100vh;
+
+    scroll-snap-align: start;
+}
+
+.smooth-scroll {
+    scroll-behavior: smooth;
 }

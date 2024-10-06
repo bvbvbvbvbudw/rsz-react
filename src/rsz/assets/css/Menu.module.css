@@ -41,3 +41,27 @@
         font-size: 40px;
     }
 }
+.menu {
+    /* стили для меню */
+}
+
+.menuItem {
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.menuItem.active {
+    /*color: #f0f0f0;*/
+    color: black;
+}
+
+.menuIcon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.menuIcon.activeIcon {
+    transform: rotate(90deg); /* Поворот стрелки */
+}

@@ -83,3 +83,41 @@
         padding: 100px 20px 0;
     }
 }
+
+.imageContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.imageContainer img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fadeOut {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.fadeIn {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: fadeInSlide 0.5s ease forwards;
+}
+
+@keyframes fadeInSlide {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

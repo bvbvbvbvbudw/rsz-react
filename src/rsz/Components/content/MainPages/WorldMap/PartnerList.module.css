@@ -1,0 +1,41 @@
+.partnerList {
+    margin-top: 32px;
+}
+
+.partnerListTitle {
+    color: #180200;
+    font: 600 26px/1 Fixel, sans-serif;
+    margin-bottom: 16px;
+}
+
+.partnerGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 96px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.partnerItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.partnerFlag {
+    width: 39px;
+    height: auto;
+    object-fit: contain;
+}
+
+.partnerName {
+    color: #180200;
+    font: 500 20px/1.2 Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
+    letter-spacing: 0.15px;
+}
+
+@media (max-width: 991px) {
+    .partnerGrid {
+        gap: 16px;
+    }
+}
