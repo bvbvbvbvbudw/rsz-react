@@ -1,7 +1,7 @@
 .worldMapContainer {
     position: relative;
-    width: 50%;
-    height: 1000px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -26,8 +26,8 @@
 
 .mapDecoration {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .partnerHighlight {
@@ -36,13 +36,56 @@
     object-fit: contain;
     margin-top: -50px;
 }
-
 @media (max-width: 991px) {
     .worldMapContainer {
+        overflow: hidden;
         width: 100%;
         height: auto;
         aspect-ratio: 1 / 1;
     }
+
+    .mapDecoration {
+        object-fit: fill;
+        margin-top: -300px;
+    }
+}
+@media (max-width: 861px) {
+
+    .worldMapContainer {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .mapDecoration {
+        object-fit: contain;
+        margin-top: -300px;
+    }
+
+    .mapContent {
+        padding: 100px 20px;
+    }
+
+    .partnerHighlight {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 587px) {
+    .worldMapContainer {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+
+    }
+
+    .mapDecoration {
+        object-fit: contain;
+        margin-top: -380px;
+    }
+
 
     .mapContent {
         padding: 100px 20px;

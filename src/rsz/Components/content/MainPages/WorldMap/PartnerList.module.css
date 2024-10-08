@@ -8,13 +8,20 @@
     margin-bottom: 16px;
 }
 
+@media (max-width: 991px) {
+    .partnerListTitle {
+        font-size: 16px;
+    }
+}
+
 .partnerGrid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px 96px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
     padding: 0;
     list-style-type: none;
 }
+
 
 .partnerItem {
     display: flex;
@@ -35,7 +42,29 @@
 }
 
 @media (max-width: 991px) {
+
     .partnerGrid {
         gap: 16px;
+    }
+
+    .partnerFlag {
+        width: 30px;
+    }
+
+    .partnerName {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 587px) {
+    .partnerList {
+        margin: 0;
+    }
+
+    .partnerGrid {
+        gap: 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
