@@ -1,3 +1,5 @@
+
+
 .banner {
     background-color: #f8f9fb;
     display: flex;
@@ -28,7 +30,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: 85% center;
 }
 
 .header {
@@ -100,7 +102,7 @@
     display: flex;
     min-width: 240px;
     align-items: center;
-    gap: 40px 70px;
+    gap: 20px;
     letter-spacing: 0.46px;
     justify-content: start;
     flex-wrap: wrap;
@@ -213,6 +215,45 @@
     align-self: stretch;
     margin: auto 0;
 }
+.hamburger {
+    background: transparent;
+    border: none;
+    display: none;
+    margin: 0 20px 0 0;
+}
+.cont {
+    display: flex;
+    flex-direction: row-reverse;
+}
+@media screen and (max-width: 1360px) {
+    .companyName {
+        font-size: 20px;
+    }
+    .navigation {
+        gap: 10px;
+        font-size: 12px;
+    }
+    .languageButton {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1099px) {
+    .companyName {
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 1009px)  {
+    .logo {
+        min-width: 10px;
+    }
+    .navigation, .companyName {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
 
 .heroSection {
     position: absolute;
@@ -227,9 +268,11 @@
     font-family: Fixel, sans-serif;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 587px) {
     .heroSection {
         margin-top: 40px;
+        top: 8%;
+        left: 0;
     }
 }
 
@@ -241,7 +284,16 @@
 
 @media (max-width: 991px) {
     .heroContent {
+        max-width: 70%;
+        min-width: 587px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 587px) {
+    .heroContent {
         max-width: 100%;
+        height: 152px;
     }
 }
 
@@ -256,7 +308,7 @@
     padding: 0 20px 0 99px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 587px) {
     .heroText {
         max-width: 100%;
         padding-left: 20px;
@@ -270,7 +322,7 @@
     flex-wrap: wrap;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 587px) {
     .heroTextContent {
         max-width: 100%;
     }
@@ -285,6 +337,18 @@
     margin: auto 0;
 }
 
+@media (max-width: 587px) {
+    .foundationYear {
+        font-size: 28px;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        border-bottom: 2px solid #fff;
+    }
+}
+
 .yearNumber {
     transform: rotate(-1.6081230200044232 E16Rad);
     font-size: 130px;
@@ -297,9 +361,10 @@
     /*border: 5px solid #fff;*/
 }
 
-@media (max-width: 991px) {
+@media (max-width: 587px) {
     .yearNumber {
-        font-size: 40px;
+        font-size: 70px;
+        -webkit-text-stroke: 2px #fff;
     }
 }
 
@@ -309,6 +374,13 @@
     font-size: 42px;
     font-weight: 300;
     margin-top: -55px;
+}
+@media (max-width: 587px) {
+    .yearLabel {
+        font-size: 24px;
+        /*margin-left: 50px;*/
+        margin-top: 30px;
+    }
 }
 
 .heroSlogan {
@@ -323,11 +395,23 @@
     border-left: 2px solid #fff;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 587px) {
     .heroSlogan {
-        max-width: 100%;
-        font-size: 40px;
+        width: 100%;
         line-height: 52px;
+        border: none;
+
+        height: 66px;
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 37px;
+        line-height: 116.7%;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
     }
 }
 
@@ -351,6 +435,9 @@
         max-width: 100%;
         font-size: 40px;
         margin: 40px 10px 0 0;
+        bottom: 20%;
+        left: 0%;
+        width: 100vw;
     }
 }
 

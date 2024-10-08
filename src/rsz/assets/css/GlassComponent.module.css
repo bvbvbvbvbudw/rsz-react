@@ -241,6 +241,11 @@
         max-width: 100%;
     }
 }
+@media (max-width: 587px) {
+    .contentWrapper {
+        margin-top: 40px;
+    }
+}
 
 .sectionTitle {
     text-transform: uppercase;
@@ -275,6 +280,15 @@
     }
 }
 
+@media (max-width: 587px) {
+    .textContainer {
+        max-width: 80%;
+        margin: 0 auto;
+        font: 400 15px/28px Fixel Text, -apple-system, Roboto, Helvetica, sans-serif
+    }
+}
+
+
 .textColumn {
     display: flex;
     min-width: 240px;
@@ -308,5 +322,10 @@
     .slogan {
         max-width: 100%;
         font-size: 40px;
+    }
+}
+@media (max-width: 587px) {
+    .slogan {
+        margin-left: 20px;
     }
 }

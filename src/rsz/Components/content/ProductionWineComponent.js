@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import Header from "../header/Header";
+import React, { useState } from "react";
 import Menu from "./Menu";
 import styles from "../../assets/css/ProductionWineComponent.module.css";
 
@@ -32,7 +31,7 @@ const ProductionWineComponent = () => {
             setTimeout(() => {
                 setActiveIndex(index);
                 setIsAnimating(false);
-                setNextIndex(null); // Сбрасываем состояние следующего изображения
+                setNextIndex(null);
             }, 500);
         }
     };
@@ -41,7 +40,6 @@ const ProductionWineComponent = () => {
         <div className={styles.productionWine}>
             <div className={styles.mainContainer}>
                 <div className={styles.imageContainer}>
-                    {/* Текущая картинка */}
                     <img
                         key={`current-${activeIndex}`}
                         loading="lazy"
@@ -49,7 +47,6 @@ const ProductionWineComponent = () => {
                         alt=""
                         className={`${styles.backgroundImage} ${isAnimating ? styles.fadeOut : ""}`}
                     />
-                    {/* Следующая картинка */}
                     {nextIndex !== null && (
                         <img
                             key={`next-${nextIndex}`}

@@ -1,5 +1,7 @@
 .menu {
-    margin-top: 269px;
+    position: absolute;
+    top: 10%;
+    right: 2%;
     width: 100%;
     color: #fff;
     text-align: center;
@@ -31,6 +33,10 @@
         max-width: 100%;
         margin-top: 40px;
         font-size: 40px;
+
+        position: absolute;
+        top: 15%;
+        right: 2%;
     }
 
     .menuItem {
@@ -38,7 +44,7 @@
     }
 
     .menuTitle {
-        font-size: 40px;
+        font-size: 20px;
     }
 }
 .menu {

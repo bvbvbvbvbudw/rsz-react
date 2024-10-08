@@ -36,21 +36,24 @@
 }
 
 .leftColumn {
-    display: flex;
-    flex-direction: column;
-    width: 57%;
+    width: 100vw;
+    height: 100vh;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*width: 57%;*/
 }
 
 .mainHeading {
     transform: rotate(-1.6081230200044232E16Rad);
     text-shadow: 0 4px 10px #000;
     position: relative;
+    top: 80%;
     min-height: 900px;
-    flex-grow: 1;
     overflow: hidden;
     color: #fff;
-    text-align: center;
-    padding: 750px 70px 25px;
+    width: 100vw;
+    text-align: start;
+    margin-left: 50px;
     font: 400 76px/1 Marianna, -apple-system, Roboto, Helvetica, sans-serif;
 }
 
@@ -80,7 +83,12 @@
     .mainHeading {
         max-width: 100%;
         font-size: 40px;
-        padding: 100px 20px 0;
+        /*padding: 100px 20px 0;*/
+    }
+}
+@media (max-width: 991px) {
+    .mainHeading {
+        margin-left: 20px;
     }
 }
 
@@ -101,8 +109,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 20% center;
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
 
 .fadeOut {
     opacity: 0;
