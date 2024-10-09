@@ -34,6 +34,7 @@
 }
 
 .header {
+    background: rgba(24, 2, 0, 0.5) url("../../assets/img/header_1920 (1).png");
     position: fixed;
     z-index: 9999;
     background-color: rgba(24, 2, 0, 0.5);
@@ -124,6 +125,7 @@
     align-items: center;
     white-space: nowrap;
     justify-content: center;
+    text-decoration: none;
     padding: 8px 11px;
     color: #fff;
 }
@@ -157,6 +159,7 @@
     color: #180200;
     white-space: nowrap;
     padding: 8px 22px;
+    text-decoration: none;
 }
 
 @media (max-width: 991px) {

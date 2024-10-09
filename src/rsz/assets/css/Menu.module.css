@@ -6,6 +6,8 @@
     color: #fff;
     text-align: center;
     font: 400 48px/1 Fixel, sans-serif;
+
+
 }
 
 .menuItem {
@@ -58,8 +60,9 @@
 }
 
 .menuItem.active {
-    /*color: #f0f0f0;*/
-    color: black;
+}
+.menuItem.active svg {
+    fill: white
 }
 
 .menuIcon {
@@ -68,6 +71,7 @@
     transition: transform 0.3s ease;
 }
 
-.menuIcon.activeIcon {
-    transform: rotate(90deg); /* Поворот стрелки */
+.menuIcon.activeIcon path {
+    /*transform: rotate(90deg); !* Поворот стрелки *!*/
+    fill: white;
 }

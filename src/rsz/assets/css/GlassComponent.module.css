@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    height: 100vh;
     min-height: 1000px;
     width: 100%;
     padding-bottom: 190px;
@@ -328,4 +329,75 @@
     .slogan {
         margin-left: 20px;
     }
+}
+
+
+.title {
+    width: 892px;
+    height: 56px;
+    font-family: 'Fixel';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 116.7%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #180200;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0; padding: 0;
+}
+.topDescription {
+    /*width: 892px;*/
+    /*height: 190px;*/
+
+    font-family: 'Fixel Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15px;
+
+    color: #180200;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: -50px 0 0 0; padding: 0;
+}
+.bottomWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: -50px 0 0 0; padding: 0;
+}
+@media (max-width: 582px) {
+    .bottomWrapper {
+        flex-direction: column;
+    }
+}
+.leftSide {
+
+    font-family: 'Fixel';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 116.7%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #00A700;
+}
+.bottomDescription {
+
+    font-family: 'Fixel Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    letter-spacing: 0.15px;
+    color: #180200;
 }

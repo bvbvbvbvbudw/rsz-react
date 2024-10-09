@@ -1,24 +1,19 @@
+#root {
+    overflow: hidden;
+}
 .container {
     position: relative;
 }
 
 .container img {
-    /* photo */
-
     position: absolute;
     width: 993px;
     height: 691px;
     object-fit: contain;
     left: 99px;
     top: 174px;
-
-
 }
-
 .info {
-    /* text */
-
-    /* Auto layout */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -26,16 +21,70 @@
     gap: 50px;
 
     position: absolute;
-    width: 942px;
+    /*width: 942px;*/
+    max-width: 942px;
     height: 446px;
-    left: 829px;
+    right: 2%;
     top: 250px;
 
     background: rgba(255, 255, 255, 0.7);
     background-blend-mode: overlay, normal;
     box-shadow: inset 0px 4px 2px rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(8px);
-    /* Note: backdrop-filter has minimal browser support */
     border-radius: 4px;
-
+}
+@media (max-width: 1700px) {
+    .container img {
+        left: 20px;
+    }
+    /*.info {*/
+    /*    left: 500px;*/
+    /*}*/
+}
+@media (max-width: 991px) {
+    .info * {
+        font-size: inherit;
+    }
+    .info {
+        font-size: 120%;
+        color: red;
+    }
+    .container img {
+        width: 70vw;
+        margin: 0 auto;
+        height: auto;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .info {
+        top: 60vw;
+        right: 50%;
+        transform: translate(50%);
+        width: 80%;
+        margin: 0 auto
+    }
+}
+@media (max-width: 582px) {
+    .info {
+        font-size: 110%;
+    }
+}
+@media (max-width: 500px) {
+    .info {
+        top: 80vw;
+        font-size: 100%;
+    }
+}
+@media (max-width: 417px) {
+    .info {
+        top: 80vw;
+        font-size: 80%;
+    }
+}
+@media (max-width: 360px) {
+    .info {
+        top: 100vw;
+        font-size: 80%;
+    }
 }
