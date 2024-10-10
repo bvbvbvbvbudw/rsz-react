@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../assets/css/GlassFactory.module.css';
+import styles from '../MainPagesComponents/GlassFactory.module.css';
 import HeroSection from "../MainPagesComponents/HeroSection";
 
 export default function FirstPage() {
@@ -12,7 +12,6 @@ export default function FirstPage() {
                     className={styles.backgroundImage}
                     alt=""
                 />
-                {/*<Header />*/}
                 <HeroSection />
             </div>
         </div>

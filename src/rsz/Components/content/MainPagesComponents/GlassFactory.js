@@ -1,6 +1,5 @@
 import React from 'react';
-import styles from '../../../assets/css/GlassFactory.module.css';
-import Header from '../../header/Header';
+import styles from './GlassFactory.module.css';
 import HeroSection from './HeroSection';
 
 function GlassFactory() {
@@ -13,7 +12,6 @@ function GlassFactory() {
                     className={styles.backgroundImage}
                     alt=""
                 />
-                {/*<Header />*/}
                 <HeroSection />
             </div>
         </div>

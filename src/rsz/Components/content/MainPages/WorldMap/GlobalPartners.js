@@ -3,7 +3,7 @@ import styles from './GlobalPartners.module.css';
 import PartnerList from './PartnerList';
 import Pagination from './Pagination';
 import WorldMap from './WorldMap';
-import AdvantagesList from '../../Advantages';
+import AdvantagesList from '../../Advantages/Advantages';
 
 const GlobalPartners = () => {
     const [currentPage, setCurrentPage] = useState(1);

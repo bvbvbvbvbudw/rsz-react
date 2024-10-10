@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../assets/css/Footer.module.css';
+import styles from './Footer.module.css';
 import NavButton from './NavButton';
 import ContactItem from './ContactItem';
 

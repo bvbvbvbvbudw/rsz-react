@@ -19,6 +19,10 @@ import Footer from "./rsz/Components/footer/Footer"; // TODO: поправить
 // TODO: делать все с анимациями . Переименовать все файлы правильно, чтобы все было понятно. Перечитать тз . Сделать логику чтобы по апи загружались сохранялись картинки которые бекграунд Главной
 
 import './rsz/assets/fonts/fonts.css';
+import Products from "./rsz/pages/Products";
+import ProductsPage from "./rsz/pages/ProductPage";
+
+
 // import './rsz/assets/css/style.css';
 export default function App() {
 
@@ -27,6 +31,8 @@ export default function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<MainPage />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/products/test" element={<ProductsPage />} />
           </Routes>
         </BrowserRouter>
       </div>

@@ -1,0 +1,56 @@
+.productionInfo {
+    margin-top: 50px;
+}
+
+.sectionTitle {
+    color: #180200;
+    text-transform: uppercase;
+    font: 600 32px/1.2 Fixel, sans-serif;
+    margin-bottom: 30px;
+}
+
+.contentWrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.productionImage {
+    width: 480px;
+    aspect-ratio: 1.15;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.textContent {
+    flex: 1;
+    font-family: Fixel Text, sans-serif;
+    letter-spacing: 0.15px;
+    color: #2d2d2d;
+}
+
+.highlight {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.textContent p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 991px) {
+    .productionInfo {
+        margin-top: 40px;
+    }
+
+    .contentWrapper {
+        flex-direction: column;
+    }
+
+    .productionImage {
+        max-width: 100%;
+    }
+}

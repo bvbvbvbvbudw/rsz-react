@@ -1,0 +1,41 @@
+.productPage {
+    background-color: #e2ddd6;
+}
+
+.mainContent {
+    max-width: 1488px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.heroBanner {
+    width: 100%;
+    aspect-ratio: 3.19;
+    object-fit: contain;
+    margin-top: -100px;
+}
+
+.productSection {
+    display: flex;
+    gap: 24px;
+    margin-top: 80px;
+}
+
+.productDisplay {
+    flex-grow: 1;
+}
+
+@media (max-width: 991px) {
+    .mainContent {
+        max-width: 100%;
+    }
+
+    .productSection {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .heroBanner {
+        margin-top: -50px;
+    }
+}

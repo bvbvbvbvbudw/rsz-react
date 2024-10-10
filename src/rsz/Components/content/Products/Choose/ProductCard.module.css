@@ -1,0 +1,93 @@
+.productCard {
+    position: relative;
+    width: 354px;
+    min-height: 433px;
+    border-radius: 16px;
+    background-color: #f6f6f4;
+    border: 1px solid #d0cec7;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.productImage {
+    position: absolute;
+    left: 30px;
+    top: -53px;
+    height: 403px;
+    width: auto;
+    z-index: 1;
+}
+
+.productInfo {
+    width: 150px;
+    align-self: flex-end;
+    z-index: 2;
+}
+
+.productName {
+    color: #180200;
+    font: 500 20px/1.2 Fixel Text, sans-serif;
+    letter-spacing: 0.15px;
+    margin: 0 0 10px 0;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #d0cec7;
+    margin: 10px 0;
+}
+
+.productSpecs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.specItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: rgba(24, 2, 0, 0.87);
+    font: 400 16px Fixel Text, sans-serif;
+    letter-spacing: 0.15px;
+}
+
+.specIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.actionButtons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 67px;
+    padding: 8px 16px;
+    border: 1px solid #d0cec7;
+    border-radius: 8px;
+}
+
+.actionButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.buttonIcon {
+    width: 18px;
+    height: auto;
+}
+
+@media (max-width: 991px) {
+    .productCard {
+        padding: 20px;
+    }
+
+    .productImage {
+        left: 20px;
+    }
+}

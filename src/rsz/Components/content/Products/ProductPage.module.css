@@ -1,0 +1,15 @@
+.productPage {
+    max-width: none !important;
+    background-color: #f6f6f4;
+}
+
+.mainContent {
+    background-color: #e2ddd6;
+    padding: 80px 216px;
+}
+
+@media (max-width: 991px) {
+    .mainContent {
+        padding: 40px 20px;
+    }
+}

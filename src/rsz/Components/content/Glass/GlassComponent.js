@@ -1,6 +1,5 @@
 import React from 'react';
-import styles from '../../assets/css/GlassComponent.module.css';
-import Header from '../header/Header';
+import styles from '../MainPages/GlassComponent.module.css';
 import ContentSection from './ContentSection';
 
 const GlassComponent = () => {
@@ -13,7 +12,6 @@ const GlassComponent = () => {
                     className={styles.backgroundImage}
                     alt=""
                 />
-                {/*<Header />*/}
                 <ContentSection />
             </main>
         </div>

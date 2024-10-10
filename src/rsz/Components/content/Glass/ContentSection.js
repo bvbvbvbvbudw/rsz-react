@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../assets/css/GlassComponent.module.css';
+import styles from '../MainPages/GlassComponent.module.css';
 
 const ContentSection = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../../../assets/css/GlassComponent.module.css";
+import styles from "./GlassComponent.module.css";
 
 import bg from '../../../assets/img/background.png'
 import photo from '../../../assets/img/photo.png'

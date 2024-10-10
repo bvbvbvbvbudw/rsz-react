@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../assets/css/Advanteges.module.css';
+import styles from './Advanteges.module.css';
 
 const advantagesList = [
     {

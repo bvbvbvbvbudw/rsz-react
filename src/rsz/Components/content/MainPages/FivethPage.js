@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "../../../assets/css/MainPage.module.css";
-import Advantages from "../Advantages";
-import ImageGallery from "../ImageGallery";
+import styles from "./MainPage.module.css";
+import Advantages from "../Advantages/Advantages";
+import ImageGallery from "../MainPagesComponents/ImageGallery";
 import Footer from "../../footer/Footer";
 
 export default function FivethPage(){

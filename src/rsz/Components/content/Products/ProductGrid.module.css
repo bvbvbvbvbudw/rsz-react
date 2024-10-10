@@ -1,0 +1,13 @@
+.productGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+    margin: 5% 0 5%  0;
+}
+
+@media (max-width: 991px) {
+    .productGrid {
+        gap: 20px;
+    }
+}

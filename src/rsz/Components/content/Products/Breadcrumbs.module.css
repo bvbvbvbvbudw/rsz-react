@@ -1,0 +1,25 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.breadcrumbLink {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+    font: 400 16px Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
+    letter-spacing: 0.15px;
+}
+
+.homeIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.separator {
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+}

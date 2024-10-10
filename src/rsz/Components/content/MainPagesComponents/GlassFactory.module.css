@@ -34,7 +34,7 @@
 }
 
 .header {
-    background: rgba(24, 2, 0, 0.5) url("../../assets/img/header_1920 (1).png");
+    background: rgba(24, 2, 0, 0.5) url("../../../assets/img/header_1920 (1).png");
     position: fixed;
     z-index: 9999;
     background-color: rgba(24, 2, 0, 0.5);

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../assets/css/GlassFactory.module.css';
+import styles from '../content/MainPagesComponents/GlassFactory.module.css';
 
 function Header() {
     const navItems = [

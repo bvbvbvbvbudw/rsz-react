@@ -1,5 +1,5 @@
 import React from "react";
-import ProductionWineComponent from "../ProductionWineComponent";
+import ProductionWineComponent from "../Wine/ProductionWineComponent";
 
 export default function FourthPage()
 {
