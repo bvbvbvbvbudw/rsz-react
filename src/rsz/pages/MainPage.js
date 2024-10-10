@@ -10,6 +10,7 @@ import GlobalPartners from "../Components/content/MainPages/WorldMap/GlobalPartn
 
 export default function MainPage() {
     const [currentSection, setCurrentSection] = useState(0);
+    const [isTouchDevice, setIsTouchDevice] = useState(false);
 
     const sections = [
         <FirstPage />,
@@ -43,20 +44,27 @@ export default function MainPage() {
     };
 
     useEffect(() => {
-        const handleScroll = (event) => {
-            if (event.deltaY > 0 && currentSection < sections.length - 1) {
-                setCurrentSection((prevSection) => prevSection + 1);
-            } else if (event.deltaY < 0 && currentSection > 0) {
-                setCurrentSection((prevSection) => prevSection - 1);
-            }
-        };
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+        setIsTouchDevice(isTouchDevice);
+    }, []);
 
-        window.addEventListener('wheel', handleScroll);
+    useEffect(() => {
+        if (!isTouchDevice) {
+            const handleScroll = (event) => {
+                if (event.deltaY > 0 && currentSection < sections.length - 1) {
+                    setCurrentSection((prevSection) => prevSection + 1);
+                } else if (event.deltaY < 0 && currentSection > 0) {
+                    setCurrentSection((prevSection) => prevSection - 1);
+                }
+            };
 
-        return () => {
-            window.removeEventListener('wheel', handleScroll);
-        };
-    }, [currentSection, sections.length]);
+            window.addEventListener('wheel', handleScroll);
+
+            return () => {
+                window.removeEventListener('wheel', handleScroll);
+            };
+        }
+    }, [currentSection, sections.length, isTouchDevice]);
 
     useEffect(() => {
         const targetSection = document.getElementById(`section-${currentSection}`);

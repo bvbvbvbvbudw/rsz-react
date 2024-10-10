@@ -161,3 +161,35 @@
     white-space: nowrap;
     border: 0;
 }
+@media (max-width: 750px) {
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+    .navColumn, .contactText {
+        font-size: 12px;
+    }
+}
+@media (max-width: 600px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "navGroup logo"
+            "contactInfo contactInfo";
+    }
+
+    .navGroup {
+        grid-area: logo; /* swap navGroup with logo */
+    }
+
+    .logo {
+        grid-area: navGroup; /* swap logo with navGroup */
+    }
+
+    .contactInfo {
+        grid-column: 1 / span 2;
+        grid-area: contactInfo;
+    }
+}
