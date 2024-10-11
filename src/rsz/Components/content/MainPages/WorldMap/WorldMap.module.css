@@ -1,7 +1,7 @@
 .worldMapContainer {
     position: relative;
     width: 100%;
-    height: 100%;
+    /*height: 100vh;*/
     overflow: hidden;
 }
 
@@ -26,8 +26,8 @@
 
 .mapDecoration {
     width: 100%;
-    height: 100vh;
-    object-fit: cover;
+    height: 100%;
+    object-fit: fill;
 }
 
 .partnerHighlight {
@@ -46,7 +46,7 @@
 
     .mapDecoration {
         object-fit: fill;
-        margin-top: -300px;
+        /*margin-top: -300px;*/
     }
 }
 @media (max-width: 861px) {
@@ -60,7 +60,7 @@
 
     .mapDecoration {
         object-fit: contain;
-        margin-top: -300px;
+        /*margin-top: -300px;*/
     }
 
     .mapContent {
@@ -83,7 +83,7 @@
 
     .mapDecoration {
         object-fit: contain;
-        margin-top: -380px;
+        /*margin-top: -380px;*/
     }
 
 
