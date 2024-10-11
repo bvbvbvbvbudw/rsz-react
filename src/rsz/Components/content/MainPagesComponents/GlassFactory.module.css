@@ -12,9 +12,9 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    min-height: 1000px;
+    /*min-height: 1000px;*/
     width: 100%;
-    /*height: 100vh;*/
+    height: 100vh;
     padding-bottom: 61px;
 }
 
@@ -25,19 +25,21 @@
 }
 
 .backgroundImage {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 85% center;
+    position: absolute; /* Абсолютное позиционирование для изображения */
+    bottom: 0; /* Прикрепляем низ изображения к низу контейнера */
+    left: 0; /* Устанавливаем левую границу */
+    right: 0; /* Устанавливаем правую границу */
+    width: 100%; /* Ширина 100% */
+    height: auto; /* Высота автоматически подстраивается */
+    object-fit: cover; /* Изображение будет заполнять область */
+    object-position: center; /* Центрируем изображение */
 }
+
 
 .header {
     background: rgba(24, 2, 0, 0.5) url("../../../assets/img/header_1920 (1).png");
     position: fixed;
     z-index: 9999;
-    background-color: rgba(24, 2, 0, 0.5);
     display: flex;
     min-height: 100px;
     width: 98vw;

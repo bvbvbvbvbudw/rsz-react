@@ -12,7 +12,7 @@
     flex-direction: column;
     position: relative;
     height: 100vh;
-    min-height: 1000px;
+    /*min-height: 1000px;*/
     width: 100%;
     padding-bottom: 190px;
 }
@@ -280,7 +280,14 @@
         max-width: 100%;
     }
 }
+@media(max-height: 786px) {
+    .textContent {
+        font-size: 16px;
+    }
+    .textContainer {
 
+    }
+}
 @media (max-width: 587px) {
     .textContainer {
         max-width: 80%;
@@ -312,11 +319,13 @@
 }
 
 .slogan {
-    transform: rotate(-1.6081230200044232E16Rad);
-    color: #fff;
-    align-self: start;
-    margin-top: 35px;
-    font: 400 60px/1 Marianna, -apple-system, Roboto, Helvetica, sans-serif;
+    width: 1000px;
+    position: absolute; /* Абсолютное позиционирование для слогана */
+    bottom: 60px; /* Отступ от низа экрана */
+    left: 50%; /* Центрируем слоган по горизонтали */
+    transform: translateX(-50%) rotate(-1.6081230200044232E16Rad); /* Центрируем и поворачиваем слоган */
+    color: #fff; /* Цвет текста */
+    font: 400 60px/1 Marianna, -apple-system, Roboto, Helvetica, sans-serif; /* Шрифт слогана */
 }
 
 @media (max-width: 991px) {
@@ -340,14 +349,13 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 116.7%;
-    display: flex;
     align-items: center;
     text-transform: uppercase;
     color: #180200;
     flex: none;
     align-self: stretch;
     flex-grow: 0;
-    margin: 0; padding: 0;
+    margin: 10px 0 20px 0; padding: 0;
 }
 .topDescription {
     /*width: 892px;*/
@@ -357,7 +365,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 160%;
+    line-height: 25px;
     display: flex;
     align-items: center;
     letter-spacing: 0.15px;
@@ -372,7 +380,7 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-    margin: -50px 0 0 0; padding: 0;
+    margin: 0 0 0 0; padding: 0;
 }
 @media (max-width: 582px) {
     .bottomWrapper {

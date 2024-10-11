@@ -1,90 +1,133 @@
 #root {
     overflow: hidden;
 }
+
 .container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    margin-left: 10%;
 }
 
-.container img {
-    position: absolute;
-    width: 993px;
-    height: 691px;
-    object-fit: contain;
-    left: 99px;
-    top: 174px;
+.photo {
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    margin-bottom: 20px;
 }
+
 .info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 50px;
-    gap: 50px;
-
-    position: absolute;
-    /*width: 942px;*/
-    max-width: 942px;
-    height: 446px;
-    right: 2%;
-    top: 250px;
-
     background: rgba(255, 255, 255, 0.7);
-    background-blend-mode: overlay, normal;
-    box-shadow: inset 0px 4px 2px rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(8px);
     border-radius: 4px;
+    box-shadow: inset 0px 4px 2px rgba(255, 255, 255, 0.25);
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    height: 400px;
+    text-align: left;
+    position: relative;
+    right: 20%;
 }
-@media (max-width: 1700px) {
-    .container img {
-        left: 20px;
+
+.info * {
+    font-size: inherit;
+}
+
+.info {
+    font-size: 25px;
+}
+
+/* Медиазапрос для экранов от 600px и шире */
+@media (min-width: 600px) {
+    .info {
+        font-size: 1rem; /* Уменьшаем размер текста */
+        padding: 20px;   /* Уменьшаем отступы */
     }
-    /*.info {*/
-    /*    left: 500px;*/
-    /*}*/
 }
-@media (max-width: 991px) {
-    .info * {
-        font-size: inherit;
+
+/* Медиазапрос для экранов от 400px и шире */
+@media (min-width: 400px) {
+    .info {
+        font-size: 0.9rem; /* Еще уменьшаем размер текста */
+    }
+}
+
+/* Медиазапрос для экранов от 900px и шире */
+@media (min-width: 900px) {
+    .container {
+        flex-direction: row; /* Размещаем элементы в строку */
+        align-items: center;
+    }
+
+    .photo {
+        width: 60%;        /* Уменьшаем ширину фото */
+        margin-bottom: 0;  /* Убираем нижний отступ */
+    }
+
+    .info {
+        width: 55%;        /* Устанавливаем ширину блока с текстом */
+        max-width: 800px;  /* Ограничиваем максимальную ширину */
+        margin-left: 20px; /* Добавляем отступ слева */
+        font-size: 1.2rem; /* Увеличиваем размер текста */
+    }
+}
+
+/* Медиазапрос для экранов до 1330px */
+@media (max-width: 1330px) {
+    .info {
+        font-size: 0.9rem; /* Уменьшаем размер текста на меньших экранах */
+        width: 60%;
+        max-width: 1300px;
+    }
+}
+@media (max-width: 1530px) {
+    .photo {
+        width: 55%;
     }
     .info {
-        font-size: 120%;
-        color: red;
+        font-size: 1.2rem; /* Уменьшаем размер текста на меньших экранах */
+        width: 60%;
+        max-width: 600px;
     }
-    .container img {
-        width: 70vw;
+}
+@media(max-width: 1135px) {
+    .container {
+        flex-direction: column;
+        margin: 0; padding: 0
+    }
+    .photo {
+        width: 40%;
         margin: 0 auto;
+    }
+    .info {
+        bottom: 1%;
+        right: 0;
+        width: 70%;
+        max-width: none;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 682px) {
+    .photo {
+        width: 100%;
+    }
+    .info {
+        margin-top: -100px;
+        font-size: 0.9rem;
+    }
+}
+@media(max-width: 437px) {
+    .info {
+        font-size: 0.67rem;
         height: auto;
-        top: 150px;
-        left: 50%;
-        transform: translate(-50%);
-    }
-    .info {
-        top: 60vw;
-        right: 50%;
-        transform: translate(50%);
-        width: 80%;
-        margin: 0 auto
-    }
-}
-@media (max-width: 582px) {
-    .info {
-        font-size: 110%;
-    }
-}
-@media (max-width: 500px) {
-    .info {
-        top: 80vw;
-        font-size: 100%;
-    }
-}
-@media (max-width: 417px) {
-    .info {
-        top: 80vw;
-        font-size: 80%;
-    }
-}
-@media (max-width: 360px) {
-    .info {
-        top: 100vw;
-        font-size: 80%;
     }
 }

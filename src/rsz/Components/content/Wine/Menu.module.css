@@ -1,13 +1,11 @@
 .menu {
     position: absolute;
-    top: 10%;
+    bottom: 5%;
     right: 2%;
     width: 100%;
     color: #fff;
     text-align: center;
     font: 400 48px/1 Fixel, sans-serif;
-
-
 }
 
 .menuItem {

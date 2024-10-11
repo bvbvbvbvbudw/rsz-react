@@ -1,7 +1,6 @@
 body, html {
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .wrapper {
@@ -11,7 +10,7 @@ body, html {
 }
 
 .section {
-    height: 100vh;
+    /*height: 100vh;*/
 
     scroll-snap-align: start;
 }
