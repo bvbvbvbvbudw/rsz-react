@@ -1,5 +1,3 @@
-
-
 .banner {
     background-color: #f8f9fb;
     display: flex;
@@ -25,14 +23,12 @@
 }
 
 .backgroundImage {
-    position: absolute; /* Абсолютное позиционирование для изображения */
-    bottom: 0; /* Прикрепляем низ изображения к низу контейнера */
-    left: 0; /* Устанавливаем левую границу */
-    right: 0; /* Устанавливаем правую границу */
-    width: 100%; /* Ширина 100% */
-    height: auto; /* Высота автоматически подстраивается */
-    object-fit: cover; /* Изображение будет заполнять область */
-    object-position: center; /* Центрируем изображение */
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 85% center;
 }
 
 
@@ -440,7 +436,7 @@
         max-width: 100%;
         font-size: 40px;
         margin: 40px 10px 0 0;
-        bottom: 24%;
+        bottom: 10%;
         left: 0;
         width: 100vw;
     }

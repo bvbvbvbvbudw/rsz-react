@@ -9,7 +9,11 @@ function ProductCard({ title, image, buttons }) {
                 <h2 className={styles.productTitle}>{title}</h2>
                 <div className={styles.buttonContainer}>
                     {buttons.map((button, index) => (
-                        <button key={index} className={styles.productButton}>
+                        <button
+                            onClick={() => window.location.href = button.url}
+                            key={index}
+                            className={styles.productButton}
+                        >
                             {button.text}
                             <img src={button.icon} alt="" className={styles.buttonIcon} />
                         </button>

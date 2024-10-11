@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // TODO: всем надо сделать адаптив. Сделать смену языков логику
 // TODO: делать все с анимациями. Перечитать тз.
 //  Сделать логику чтобы по апи загружались сохранялись картинки которые бекграунд Главной
+// TODO: Хедер на внутр страницах другой, сделай простенький адаптив на них. Сделать новые страниц
 
 import './rsz/assets/fonts/fonts.css';
 import Products from "./rsz/pages/Products";

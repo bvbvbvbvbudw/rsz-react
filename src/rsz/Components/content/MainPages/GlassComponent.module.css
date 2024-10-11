@@ -282,10 +282,8 @@
 }
 @media(max-height: 786px) {
     .textContent {
-        font-size: 16px;
-    }
-    .textContainer {
-
+        margin: 0;
+        font-size: 12px;
     }
 }
 @media (max-width: 587px) {
@@ -323,7 +321,7 @@
     position: absolute; /* Абсолютное позиционирование для слогана */
     bottom: 60px; /* Отступ от низа экрана */
     left: 50%; /* Центрируем слоган по горизонтали */
-    transform: translateX(-50%) rotate(-1.6081230200044232E16Rad); /* Центрируем и поворачиваем слоган */
+    transform: translateX(-50%);
     color: #fff; /* Цвет текста */
     font: 400 60px/1 Marianna, -apple-system, Roboto, Helvetica, sans-serif; /* Шрифт слогана */
 }
@@ -331,12 +329,13 @@
 @media (max-width: 991px) {
     .slogan {
         max-width: 100%;
-        font-size: 40px;
+        font-size: 34px;
     }
 }
 @media (max-width: 587px) {
     .slogan {
         margin-left: 20px;
+        top: 84%;
     }
 }
 

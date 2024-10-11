@@ -68,13 +68,13 @@ const ProductionWineComponent = () => {
                                 Скло як витвір мистецтва
                             </h1>
                             <div className={styles.imageWrapper}>
-                                <img
-                                    key={activeIndex}
-                                    loading="lazy"
-                                    src={menuItems[activeIndex].image}
-                                    alt=""
-                                    className={`${styles.activeImage} ${isAnimating ? styles.fadeIn : ""}`}
-                                />
+                                {/*<img*/}
+                                {/*    key={activeIndex}*/}
+                                {/*    loading="lazy"*/}
+                                {/*    src={menuItems[activeIndex].image}*/}
+                                {/*    alt=""*/}
+                                {/*    className={`${styles.activeImage} ${isAnimating ? styles.fadeIn : ""}`}*/}
+                                {/*/>*/}
                             </div>
                         </section>
                         <aside className={styles.rightColumn}>

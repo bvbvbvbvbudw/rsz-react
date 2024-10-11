@@ -35,7 +35,7 @@
 }
 @media (max-width: 587px) {
     .content {
-        margin-top: 160px;
+        /*margin-top: 160px;*/
     }
 }
 .infoColumn {
@@ -49,7 +49,7 @@
 
 @media (max-width: 991px) {
     .infoColumn {
-        width: 100%;
+        width: 95%;
         padding: 40px 10px 0 10px;
     }
 }

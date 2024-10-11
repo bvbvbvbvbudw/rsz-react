@@ -1,5 +1,5 @@
 import React from "react";
-import ProductionWineComponent from "../Components/content/Wine/ProductionWineComponent";
+import ProductionWineComponent from "./ProductionWineComponent";
 
 export default function ProductionWine()
 {

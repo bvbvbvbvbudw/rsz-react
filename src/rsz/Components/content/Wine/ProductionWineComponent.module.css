@@ -44,14 +44,13 @@
 }
 
 .mainHeading {
-    transform: rotate(-1.6081230200044232E16Rad);
     text-shadow: 0 4px 10px #000;
-    position: relative;
-    top: 70%;
-    min-height: 900px;
+    position: absolute;
+    bottom: 1%;
+    /*min-height: 900px;*/
     overflow: hidden;
     color: #fff;
-    width: 100vw;
+    width: 95vw;
     text-align: start;
     margin-left: 50px;
     font: 400 76px/1 Marianna, -apple-system, Roboto, Helvetica, sans-serif;
@@ -81,8 +80,11 @@
     }
 
     .mainHeading {
+        padding: 10px;
+        left: 50%;
+        transform: translate(-50%);
         max-width: 100%;
-        font-size: 40px;
+        font-size: 30px;
         /*padding: 100px 20px 0;*/
     }
 }
