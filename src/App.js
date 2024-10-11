@@ -10,6 +10,7 @@ import './rsz/assets/fonts/fonts.css';
 import Products from "./rsz/pages/Products";
 import ProductsPage from "./rsz/pages/ProductPage";
 import MainPage from "./rsz/pages/MainPage";
+import Bottle from "./rsz/pages/Bottle";
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="/" element={<MainPage />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/test" element={<ProductsPage />} />
+            <Route path="/products/test/bottle" element={<Bottle />} />
           </Routes>
         </BrowserRouter>
       </div>

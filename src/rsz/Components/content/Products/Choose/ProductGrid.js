@@ -5,6 +5,7 @@ import styles from './ProductGrid.module.css';
 const productData = [
     {
         name: "Dorato 750",
+        url: "/products/test/bottle",
         height: "296,2",
         diameter: "83,7",
         volume: "750",
@@ -13,6 +14,7 @@ const productData = [
     },
     {
         name: "Dorato 750",
+        url: "/products/test/bottle",
         height: "252",
         diameter: "93",
         volume: "1000",
@@ -21,6 +23,7 @@ const productData = [
     },
     {
         name: "Riven 500",
+        url: "/products/test/bottle",
         height: "243",
         diameter: "68.7",
         volume: "500",
@@ -29,6 +32,7 @@ const productData = [
     },
     {
         name: "Bordo 750",
+        url: "/products/test/bottle",
         height: "310",
         diameter: "73,3",
         volume: "750",
@@ -37,6 +41,7 @@ const productData = [
     },
     {
         name: "Riven 500",
+        url: "/products/test/bottle",
         height: "243",
         diameter: "68.7",
         volume: "500",
@@ -45,6 +50,7 @@ const productData = [
     },
     {
         name: "Dorato 750",
+        url: "/products/test/bottle",
         height: "252",
         diameter: "93",
         volume: "1000",

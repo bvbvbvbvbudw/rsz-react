@@ -1,0 +1,68 @@
+
+.productImageSection {
+    flex: 1;
+    min-width: 240px;
+    max-width: 480px;
+    max-height: 678px;
+    background-color: #f6f6f4;
+    border-radius: 8px;
+    padding: 35px 30px;
+    border: 1px solid #00a700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imageContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.productImage {
+    width: 142px;
+    object-fit: contain;
+}
+
+.zoomButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.zoomIcon {
+    width: 35px;
+    height: 35px;
+}
+
+.imageControls {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    padding: 8px 16px;
+    border: 1px solid #d0cec7;
+    border-radius: 8px;
+}
+
+.controlButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.controlIcon {
+    width: 18px;
+    height: 64px;
+}
+
+@media (max-width: 991px) {
+    .productImageSection {
+        padding: 20px;
+    }
+}

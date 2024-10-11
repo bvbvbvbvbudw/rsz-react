@@ -1,0 +1,38 @@
+.productPage {
+    max-width: none !important;
+    background-color: #e2d6d6;
+}
+
+.mainContent {
+    padding: 30px 216px;
+}
+
+@media (max-width: 991px) {
+    .mainContent {
+        padding: 30px 20px;
+    }
+}
+
+.productSection {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.bottleSchematic {
+    max-width: 480px;
+    max-height: 678px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.schematicImage {
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    object-fit: contain;
+}
+@media (max-width: 991px) {
+    .productSection {
+        flex-direction: column;
+    }
+}
