@@ -1,7 +1,5 @@
 .companyInfo {
     display: flex;
-    margin: 24px auto 0;
-    width: 90%;
     gap: 16px;
 }
 

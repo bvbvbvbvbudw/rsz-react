@@ -19,6 +19,11 @@ body, html {
     scroll-behavior: smooth;
 }
 
+/*#first {*/
+/*    margin: 24px auto 0;*/
+/*    width: 90%;*/
+/*}*/
+
 #borderTop {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;

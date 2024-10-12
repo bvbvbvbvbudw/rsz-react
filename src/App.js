@@ -16,7 +16,7 @@ import AboutUs from "./rsz/pages/AboutUs";
 import CertificationPage from "./rsz/Components/content/About/Cert/CertificationPage";
 import TenderPage from "./rsz/Components/content/About/Tender/TenderPage";
 
-// TODO: поправить в Главная отступы. Поправить про нас отступы. Адаптив. Новые страницы
+// TODO: поправить в Главная отступы. Поправить про нас отступы. Адаптив. Новые страницы. Логику на фото сделать
 export default function App() {
 
   return (
@@ -29,8 +29,6 @@ export default function App() {
             <Route path="/products/test/bottle" element={<Bottle />} />
             <Route path="/contacts" element={<ContactPage />} />
             <Route path="/about" element={<AboutUs />} />
-            <Route path="/about/1" element={<CertificationPage />} />
-            <Route path="/about/2" element={<TenderPage />} />
           </Routes>
         </BrowserRouter>
       </div>
