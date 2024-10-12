@@ -1,0 +1,59 @@
+.contactPage {
+    max-width: none;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e2ddd6;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.homeLink {
+    display: flex;
+    align-items: center;
+}
+
+.homeIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.currentPage {
+    color: rgba(0, 0, 0, 0.87);
+    font: 400 16px Roboto, sans-serif;
+    letter-spacing: 0.15px;
+}
+
+.contentWrapper {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.infoWrapper {
+    padding: 100px 60px 80px 60px;
+
+}
+@media (max-width: 991px) {
+    .mainContent {
+        padding: 30px 20px 80px;
+    }
+}

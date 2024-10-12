@@ -1,0 +1,49 @@
+.contactInfo {
+    flex: 1;
+    min-width: 240px;
+}
+
+.sectionTitle {
+    color: #2d2d2d;
+    text-transform: uppercase;
+    font: 600 32px/1.2 Fixel, sans-serif;
+    margin-bottom: 24px;
+}
+
+.infoSection {
+    background-color: #efece8;
+    border-radius: 8px;
+    padding: 32px;
+    margin-bottom: 10px;
+}
+
+.sectionSubtitle {
+    color: #2d2d2d;
+    font: 600 20px/1 Fixel, sans-serif;
+    margin-bottom: 8px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    /*margin-top: 8px;*/
+}
+
+.contactIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.contactText {
+    color: #424242;
+    font: 400 16px/1.6 Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
+    letter-spacing: 0.15px;
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    .infoSection {
+        padding: 20px;
+    }
+}

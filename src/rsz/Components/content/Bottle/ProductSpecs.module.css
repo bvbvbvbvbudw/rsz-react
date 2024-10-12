@@ -67,7 +67,9 @@
 .subLabel {
     font-weight: bold;
 }
-
+th, td {
+    padding: 10px;
+}
 .evenRow, .oddRow {
     background-color: #efece8;
 }

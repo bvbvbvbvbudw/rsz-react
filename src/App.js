@@ -11,6 +11,7 @@ import Products from "./rsz/pages/Products";
 import ProductsPage from "./rsz/pages/ProductPage";
 import MainPage from "./rsz/pages/MainPage";
 import Bottle from "./rsz/pages/Bottle";
+import ContactPage from "./rsz/pages/ContactPage";
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/products/test" element={<ProductsPage />} />
             <Route path="/products/test/bottle" element={<Bottle />} />
+            <Route path="/contacts" element={<ContactPage />} />
           </Routes>
         </BrowserRouter>
       </div>

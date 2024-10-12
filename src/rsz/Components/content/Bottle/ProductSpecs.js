@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import styles from './ProductSpecs.module.css';
 
+// icons
+import pallet1 from '../../../assets/icons/pallet_1.png';
+import pallet2 from '../../../assets/icons/pallet_2.png';
+import pallet3 from '../../../assets/icons/pallet_3.png';
+import pallet4 from '../../../assets/icons/balance.png';
+import pallet5 from '../../../assets/icons/bottles.png';
+
 function ProductSpecs() {
     const [activeTab, setActiveTab] = useState('specs');
 
@@ -15,11 +22,11 @@ function ProductSpecs() {
     ];
 
     const packaging = [
-        { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/packaging1", label: "Кількість пляшки в палеті:", value: "2376" },
-        { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/packaging2", label: "Кількість рядів в палеті:", value: "9" },
-        { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/packaging3", label: "Кількість пляшки в ряді:", value: "264" },
-        { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/packaging4", label: "Вага палета:", value: "776 кг." },
-        { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/packaging5", label: "Розміри палету:", value: "1200x1000x2212 мм." }
+        { icon: pallet1, label: "Кількість пляшки в палеті:", value: "2376" },
+        { icon: pallet2, label: "Кількість рядів в палеті:", value: "9" },
+        { icon: pallet5, label: "Кількість пляшки в ряді:", value: "264" },
+        { icon: pallet4, label: "Вага палета:", value: "776 кг." },
+        { icon: pallet3, label: "Розміри палету:", value: "1200x1000x2212 мм." }
     ];
 
     return (
