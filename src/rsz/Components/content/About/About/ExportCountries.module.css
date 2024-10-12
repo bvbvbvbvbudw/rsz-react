@@ -1,0 +1,73 @@
+.exportCountries {
+    margin-top: 32px;
+}
+
+.sectionTitle {
+    color: #2d2d2d;
+    font: 600 26px/1 Fixel, sans-serif;
+}
+
+.countryGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style-type: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+.countryItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: calc(25% - 12px);
+}
+
+.countryFlag {
+    width: 39px;
+    aspect-ratio: 1.5;
+    object-fit: contain;
+}
+
+.countryName {
+    color: #180200;
+    font: 500 20px/1.2 Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.flagOfTheNetherlands1,
+.flagOfItaly1,
+.flagOfBelgium1,
+.flagOfRomania1,
+.flagOfEstonia1 {
+    width: 39px;
+    height: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.flagOfTheNetherlands1 {
+    background-image: linear-gradient(to bottom, #21468b 33.33%, #fff 33.33%, #fff 66.66%, #ae1c28 66.66%);
+}
+
+.flagOfItaly1 {
+    background-image: linear-gradient(to right, #009246 33.33%, #fff 33.33%, #fff 66.66%, #ce2b37 66.66%);
+}
+
+.flagOfBelgium1 {
+    background-image: linear-gradient(to right, #000 33.33%, #fae042 33.33%, #fae042 66.66%, #ed2939 66.66%);
+}
+
+.flagOfRomania1 {
+    background-image: linear-gradient(to right, #002b7f 33.33%, #fcd116 33.33%, #fcd116 66.66%, #ce1126 66.66%);
+}
+
+.flagOfEstonia1 {
+    background-image: linear-gradient(to bottom, #0072ce 33.33%, #000 33.33%, #000 66.66%, #fff 66.66%);
+}
+
+@media (max-width: 991px) {
+    .countryItem {
+        width: calc(50% - 8px);
+    }
+}

@@ -1,0 +1,16 @@
+.featureSection {
+    background-color: #efece8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 80px 216px;
+    margin-top: 80px;
+}
+
+@media (max-width: 991px) {
+    .featureSection {
+        padding: 40px 20px;
+        margin-top: 40px;
+    }
+}

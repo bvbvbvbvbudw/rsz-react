@@ -1,0 +1,25 @@
+.featureCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 354px;
+}
+
+.featureIcon {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.featureTitle {
+    color: #009631;
+    font: 600 26px/1 Fixel, sans-serif;
+    margin-top: 24px;
+}
+
+.featureDescription {
+    color: #424242;
+    font: 400 24px/38px Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
+    letter-spacing: 0.15px;
+    margin-top: 8px;
+}

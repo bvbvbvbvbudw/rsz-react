@@ -1,0 +1,32 @@
+.tenderPage {
+    background-color: #e2ddd6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mainContent {
+    flex: 1;
+    padding: 30px 216px;
+}
+
+.tenderContent {
+    margin-top: 24px;
+}
+
+.pageTitle {
+    color: #2d2d2d;
+    font: 600 32px/1.2 Fixel, sans-serif;
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+
+@media (max-width: 991px) {
+    .mainContent {
+        padding: 30px 20px;
+    }
+
+    .pageTitle {
+        max-width: 100%;
+    }
+}

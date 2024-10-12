@@ -1,0 +1,35 @@
+.tabsContainer {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.tab {
+    flex: 1;
+    padding: 9px 16px;
+    color: #5a5856;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #5a5856;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    font: 500 14px/24px Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.activeTab {
+    color: #00a700;
+    border-bottom-color: #00a700;
+}
+
+@media (max-width: 991px) {
+    .tabsContainer {
+        flex-wrap: wrap;
+    }
+
+    .tab {
+        flex-basis: 100%;
+    }
+}

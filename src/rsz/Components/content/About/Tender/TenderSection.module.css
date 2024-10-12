@@ -1,0 +1,33 @@
+.tenderSection {
+    margin-top: 24px;
+}
+
+.instructionLink {
+    display: inline-block;
+    color: #00a700;
+    font: 500 20px/1.2 Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
+    letter-spacing: 0.15px;
+    text-decoration: none;
+    border-bottom: 1px solid #00a700;
+}
+
+.sectionTitle {
+    color: #2d2d2d;
+    font: 600 26px/1 Fixel, sans-serif;
+    margin-top: 32px;
+}
+
+.tenderGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-top: 16px;
+}
+
+@media (max-width: 991px) {
+    .tenderSection,
+    .sectionTitle,
+    .tenderGrid {
+        max-width: 100%;
+    }
+}

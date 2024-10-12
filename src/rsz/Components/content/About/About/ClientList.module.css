@@ -1,0 +1,60 @@
+.clientList {
+    margin-top: 32px;
+}
+
+.sectionTitle {
+    color: #2d2d2d;
+    font: 600 26px/1 Fixel, sans-serif;
+}
+
+.showMoreButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #308730;
+    background: none;
+    border: none;
+    padding: 8px 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.46px;
+    font: 500 15px/26px Noto Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.arrowIcon {
+    width: 18px;
+    aspect-ratio: 0.82;
+    object-fit: contain;
+}
+
+.clientGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style-type: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+.clientItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: calc(33.333% - 16px);
+}
+
+.clientLogo {
+    width: 46px;
+    object-fit: contain;
+}
+
+.clientName {
+    color: #180200;
+    font: 500 20px/1.2 Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .clientItem {
+        width: 100%;
+    }
+}

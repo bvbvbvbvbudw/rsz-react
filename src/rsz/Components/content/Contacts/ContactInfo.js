@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './ContactInfo.module.css';
-
+import '../../../assets/css/style.css'
 function ContactInfo() {
     const contactSections = [
         {
@@ -34,14 +34,30 @@ function ContactInfo() {
         <section className={styles.contactInfo}>
             <h2 className={styles.sectionTitle}>Контакти</h2>
             {contactSections.map((section, index) => (
-                <div key={index} className={styles.infoSection}>
+                <div
+                    key={index}
+                    id={index === 0 ? 'borderTop' : index === contactSections.length - 1 ? 'borderBottom' : ''}
+                    className={styles.infoSection}
+                >
                     <h3 className={styles.sectionSubtitle}>{section.title}</h3>
                     {section.items.map((item, itemIndex) => (
                         <div key={itemIndex} className={styles.contactItem}>
                             <img src={item.icon} alt="" className={styles.contactIcon} />
-                            {item.type === 'phone' && <a href={`tel:${item.text.replace(/\s/g, '')}`} className={styles.contactText}>{item.text}</a>}
-                            {item.type === 'email' && <a href={`mailto:${item.text}`} className={styles.contactText}>{item.text}</a>}
-                            {item.type === 'address' && <address className={styles.contactText}>{item.text}</address>}
+                            {item.type === 'phone' && (
+                                <a href={`tel:${item.text.replace(/\s/g, '')}`} className={styles.contactText}>
+                                    {item.text}
+                                </a>
+                            )}
+                            {item.type === 'email' && (
+                                <a href={`mailto:${item.text}`} className={styles.contactText}>
+                                    {item.text}
+                                </a>
+                            )}
+                            {item.type === 'address' && (
+                                <address className={styles.contactText}>
+                                    {item.text}
+                                </address>
+                            )}
                         </div>
                     ))}
                 </div>

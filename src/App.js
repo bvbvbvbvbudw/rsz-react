@@ -12,6 +12,9 @@ import ProductsPage from "./rsz/pages/ProductPage";
 import MainPage from "./rsz/pages/MainPage";
 import Bottle from "./rsz/pages/Bottle";
 import ContactPage from "./rsz/pages/ContactPage";
+import AboutUs from "./rsz/pages/AboutUs";
+import CertificationPage from "./rsz/Components/content/About/Cert/CertificationPage";
+import TenderPage from "./rsz/Components/content/About/Tender/TenderPage";
 
 
 export default function App() {
@@ -25,6 +28,9 @@ export default function App() {
             <Route path="/products/test" element={<ProductsPage />} />
             <Route path="/products/test/bottle" element={<Bottle />} />
             <Route path="/contacts" element={<ContactPage />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/about/1" element={<CertificationPage />} />
+            <Route path="/about/2" element={<TenderPage />} />
           </Routes>
         </BrowserRouter>
       </div>

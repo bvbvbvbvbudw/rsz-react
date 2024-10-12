@@ -1,0 +1,38 @@
+.companyInfo {
+    display: flex;
+    margin-top: 24px;
+    gap: 16px;
+}
+
+.textContent {
+    flex: 1;
+}
+
+.leadParagraph {
+    color: #2d2d2d;
+    font: 600 24px/38px Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: #424242;
+    font: 400 24px/38px Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.factoryImage {
+    width: 736px;
+    aspect-ratio: 1.31;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+@media (max-width: 991px) {
+    .companyInfo {
+        flex-direction: column;
+    }
+
+    .factoryImage {
+        width: 100%;
+        max-width: 736px;
+    }
+}
