@@ -1,6 +1,8 @@
 .certificationInfo {
-    margin-top: 24px;
+    margin: 24px auto 0;
+    width: 90%;
 }
+
 
 .title {
     color: #2d2d2d;

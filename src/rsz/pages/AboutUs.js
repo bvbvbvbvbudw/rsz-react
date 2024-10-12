@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+
 import styles from '../Components/content/About/About/AboutUs.module.css';
+
 import Header from "../Components/header/Header";
 import Breadcrumbs from "../Components/content/Products/Breadcrumbs";
 import Tabs from "../Components/content/About/About/Tabs";
@@ -22,13 +24,10 @@ const AboutUs = () => {
             <Header />
             <main className={styles.mainContent}>
                 <Breadcrumbs />
+                <Tabs activeTab={activeTab} onTabClick={handleTabClick} />
                 <section className={styles.aboutUsSection}>
-                    <h1 className={styles.pageTitle}>Про нас</h1>
-                    <Tabs activeTab={activeTab} onTabClick={handleTabClick} />
-                    <div
-                        id="first"
-                        className={`${styles.tabContent} ${activeTab === 'first' ? styles.active : ''}`}
-                    >
+                    <div id="first" className={`${styles.tabContent} ${activeTab === 'first' ? styles.active : ''}`}>
+                        <h1 className={styles.pageTitle}>Про нас</h1>
                         <CompanyInfo />
                         <ClientList />
                         <ExportCountries />
@@ -36,16 +35,10 @@ const AboutUs = () => {
                             ПрАТ «Рокитнівський скляний завод» – це сучасне високорозвинуте підприємство та Ваш надійний партнер!
                         </p>
                     </div>
-                    <div
-                        id="second"
-                        className={`${styles.tabContent} ${activeTab === 'second' ? styles.active : ''}`}
-                    >
+                    <div id="second" className={`${styles.tabContent} ${activeTab === 'second' ? styles.active : ''}`}>
                         <CertificationPage />
                     </div>
-                    <div
-                        id="third"
-                        className={`${styles.tabContent} ${activeTab === 'third' ? styles.active : ''}`}
-                    >
+                    <div id="third" className={`${styles.tabContent} ${activeTab === 'third' ? styles.active : ''}`}>
                         <TenderPage />
                     </div>
                 </section>

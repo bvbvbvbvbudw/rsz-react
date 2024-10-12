@@ -6,7 +6,10 @@
     color: #2d2d2d;
     font: 600 26px/1 Fixel, sans-serif;
 }
-
+.title {
+    display: flex;
+    justify-content: space-between;
+}
 .showMoreButton {
     display: flex;
     align-items: center;

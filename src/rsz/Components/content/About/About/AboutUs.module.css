@@ -1,17 +1,37 @@
+.tabContent {
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+.tabContent.active {
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0s linear 0s;
+    visibility: visible;
+    height: auto;
+}
+
+
 .aboutUsPage {
     max-width: none;
     background-color: #e2ddd6;
 }
 
 .mainContent {
-    padding: 30px 216px;
+    margin: 0 auto;
+    padding: 30px 0 0;
 }
 
 .aboutUsSection {
-    margin-top: 24px;
+    width: 100%;
+    margin: 24px auto 0;
 }
 
 .pageTitle {
+    margin: 24px auto 0;
+    width: 90%;
     color: #2d2d2d;
     text-transform: uppercase;
     font: 600 32px/1.2 Fixel, sans-serif;
@@ -28,34 +48,4 @@
     .mainContent {
         padding: 30px 20px;
     }
-}
-/* AboutUs.module.css */
-.tabContent {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    display: none; /* Initially hide the tab contents */
-}
-
-.tabContent.active {
-    opacity: 1;
-    display: block; /* Show active tab content */
-}
-
-/* Tabs.module.css */
-.tabsContainer {
-    margin-bottom: 20px;
-}
-
-.tab {
-    cursor: pointer;
-    padding: 10px;
-    border: none;
-    background: none;
-    font-size: 16px;
-}
-
-.activeTab {
-    font-weight: bold;
-    color: #007bff; /* Example active tab color */
-    border-bottom: 2px solid #007bff; /* Active tab underline */
 }

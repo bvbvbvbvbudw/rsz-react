@@ -4,7 +4,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 24px;
-    padding: 80px 216px;
+    padding: 80px;
+    height: 100%;
+    /*padding: 80px 216px;*/
     margin-top: 80px;
 }
 

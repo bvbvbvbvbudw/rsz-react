@@ -16,7 +16,7 @@ import AboutUs from "./rsz/pages/AboutUs";
 import CertificationPage from "./rsz/Components/content/About/Cert/CertificationPage";
 import TenderPage from "./rsz/Components/content/About/Tender/TenderPage";
 
-
+// TODO: поправить в Главная отступы. Поправить про нас отступы. Адаптив. Новые страницы
 export default function App() {
 
   return (

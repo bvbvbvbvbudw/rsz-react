@@ -19,13 +19,15 @@ const clients = [
 const ClientList = () => {
     return (
         <section className={styles.clientList}>
-            <h2 className={styles.sectionTitle}>
-                Основними споживачами продукції підприємства є такі відомі компанії і бренди:
-            </h2>
-            <button className={styles.showMoreButton}>
-                більше
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce9e01e90d2ddbf40ac5c6a04ef4454ee14369856106f42c4753d34144ad784b?placeholderIfAbsent=true&apiKey=4de2176252d24e8ebcd3e8166c772c27" alt="" className={styles.arrowIcon} />
-            </button>
+            <div className={styles.title}>
+                <h2 className={styles.sectionTitle}>
+                    Основними споживачами продукції підприємства є такі відомі компанії і бренди:
+                </h2>
+                <button className={styles.showMoreButton}>
+                    більше
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce9e01e90d2ddbf40ac5c6a04ef4454ee14369856106f42c4753d34144ad784b?placeholderIfAbsent=true&apiKey=4de2176252d24e8ebcd3e8166c772c27" alt="" className={styles.arrowIcon} />
+                </button>
+            </div>
             <ul className={styles.clientGrid}>
                 {clients.map((client, index) => (
                     <li key={index} className={styles.clientItem}>
