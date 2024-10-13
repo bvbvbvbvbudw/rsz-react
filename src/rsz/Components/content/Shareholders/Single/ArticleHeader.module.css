@@ -1,0 +1,48 @@
+.articleHeader {
+    display: flex;
+    align-items: start;
+}
+.articleHeader {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+}
+
+.backButton,
+.shareButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.backIcon,
+.shareIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.titleContainer {
+    flex: 1;
+}
+
+.articleTitle {
+    color: #2d2d2d;
+    text-transform: uppercase;
+    font: 600 32px/38px Fixel, -apple-system, Roboto, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.articleMeta {
+    color: #676665;
+    font: 500 14px/2 Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
+    letter-spacing: 0.1px;
+    margin-top: 8px;
+}
+
+@media (max-width: 991px) {
+    .articleHeader {
+        padding: 0 20px;
+    }
+}

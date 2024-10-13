@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    /*min-height: 1000px;*/
     width: 100%;
     height: 100vh;
     padding-bottom: 61px;
@@ -31,237 +30,11 @@
     object-position: 85% center;
 }
 
-
-.header {
-    background: rgba(24, 2, 0, 0.5) url("../../../assets/img/header_1920 (1).png");
-    position: fixed;
-    z-index: 9999;
-    display: flex;
-    min-height: 100px;
-    width: 98vw;
-    align-items: center;
-    gap: 40px 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 20px 0 20px;
-    /*padding: 20px 99px;*/
-}
-
-@media (max-width: 991px) {
-    .header {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-}
-
-.logo {
-    align-self: stretch;
-    display: flex;
-    min-width: 240px;
-    align-items: center;
-    gap: 20px;
-    color: #fff;
-    justify-content: start;
-    flex-wrap: wrap;
-    margin: auto 0;
-    font: 26px Fixel Display, sans-serif;
-}
-
-@media (max-width: 991px) {
-    .logo {
-        max-width: 100%;
-    }
-}
-
-.logoImage {
-    aspect-ratio: 0.85;
-    object-fit: cover;
-    object-position: center;
-    width: 51px;
-    align-self: stretch;
-    margin: auto 0;
-}
-
-.companyName {
-    transform: rotate(-1.6081230200044232 E16Rad);
-    align-self: stretch;
-    margin: auto 0;
-}
-
-@media (max-width: 991px) {
-    .companyName {
-        max-width: 100%;
-    }
-}
-
-.navigation {
-    align-self: stretch;
-    display: flex;
-    min-width: 240px;
-    align-items: center;
-    gap: 20px;
-    letter-spacing: 0.46px;
-    justify-content: start;
-    flex-wrap: wrap;
-    margin: auto 0;
-    font: 15px/26px Noto Sans, -apple-system, Roboto, Helvetica, sans-serif;
-}
-
-@media (max-width: 991px) {
-    .navigation {
-        max-width: 100%;
-    }
-}
-
-.navItem {
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    align-items: center;
-    white-space: nowrap;
-    justify-content: center;
-    text-decoration: none;
-    padding: 8px 11px;
-    color: #fff;
-}
-
-@media (max-width: 991px) {
-    .navItem {
-        white-space: initial;
-    }
-}
-
-.navItemBase {
-    align-self: stretch;
-    gap: 8px;
-}
-
-@media (max-width: 991px) {
-    .navItemBase {
-        white-space: initial;
-    }
-}
-
-.activeNavItem {
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    color: #180200;
-    white-space: nowrap;
-    padding: 8px 22px;
-    text-decoration: none;
-}
-
-@media (max-width: 991px) {
-    .activeNavItem {
-        white-space: initial;
-        padding: 0 20px;
-    }
-}
-
-.languageButton {
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    color: #180200;
-    white-space: nowrap;
-    margin: auto 0;
-    padding: 8px 22px;
-}
-
-@media (max-width: 991px) {
-    .languageButton {
-        white-space: initial;
-        padding: 0 20px;
-    }
-}
-
-.languageButtonContent {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    justify-content: center;
-}
-
-@media (max-width: 991px) {
-    .languageButtonContent {
-        white-space: initial;
-    }
-}
-
-.languageIcon {
-    aspect-ratio: 0.82;
-    object-fit: contain;
-    object-position: center;
-    width: 18px;
-    align-self: stretch;
-    margin: auto 0;
-}
-
-.languageText {
-    align-self: stretch;
-    margin: auto 0;
-}
-.hamburger {
-    background: transparent;
-    border: none;
-    display: none;
-    margin: 0 20px 0 0;
-}
-.cont {
-    display: flex;
-    flex-direction: row-reverse;
-}
-@media screen and (max-width: 1360px) {
-    .companyName {
-        font-size: 20px;
-    }
-    .navigation {
-        gap: 10px;
-        font-size: 12px;
-    }
-    .languageButton {
-        font-size: 12px;
-    }
-}
-@media screen and (max-width: 1099px) {
-    .companyName {
-        font-size: 15px;
-    }
-
-}
-@media screen and (max-width: 1009px)  {
-    .logo {
-        min-width: 10px;
-    }
-    .navigation, .companyName {
-        display: none;
-    }
-    .hamburger {
-        display: block;
-    }
-}
-
 .heroSection {
     position: absolute;
     top: 30%;
     left: 0;
     display: flex;
-    /*margin-top: 269px;*/
     width: auto;
     max-width: 100%;
     height: 300px;
@@ -279,8 +52,6 @@
 
 .heroContent {
     height: 200px;
-    display: flex;
-    flex-direction: column;
 }
 
 @media (max-width: 991px) {
@@ -289,6 +60,7 @@
         min-width: 587px;
         height: 400px;
     }
+
 }
 
 @media (max-width: 587px) {
@@ -302,11 +74,12 @@
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
+    width: 83%;
     min-height: 261px;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 0 20px 0 99px;
+    padding: 0 20px 0 160px;
 }
 
 @media (max-width: 587px) {
@@ -319,6 +92,7 @@
 .heroTextContent {
     display: flex;
     gap: 20px;
+    width: 100%;
     justify-content: start;
     flex-wrap: wrap;
 }
@@ -359,7 +133,6 @@
     color: transparent;
     padding: 0;
     margin: 0;
-    /*border: 5px solid #fff;*/
 }
 
 @media (max-width: 587px) {
@@ -376,10 +149,10 @@
     font-weight: 300;
     margin-top: -55px;
 }
+
 @media (max-width: 587px) {
     .yearLabel {
         font-size: 24px;
-        /*margin-left: 50px;*/
         margin-top: 30px;
     }
 }
@@ -391,31 +164,65 @@
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
-    line-height: 56px;
-    width: 459px;
+    line-height: 1.1;
+    letter-spacing: 0.4px;
+    max-width: 16ch;
+    word-wrap: break-word;
+    white-space: normal;
+    height: 100%;
+    align-content: center;
     border-left: 2px solid #fff;
 }
 
+
 @media (max-width: 587px) {
     .heroSlogan {
-        width: 100%;
-        line-height: 52px;
-        border: none;
-
-        height: 66px;
-        margin: 0;
-        padding: 0;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 37px;
-        line-height: 116.7%;
-        display: flex;
-        align-items: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
+        font-size: 34px;
+        line-height: 1;
+        letter-spacing: 0.2px;
     }
 }
 
+.heroButton {
+    margin: 20px 0 0 0;
+    font-weight: 500;
+    padding: 14px 20px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
+
+.heroButton:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.infoSection {
+    padding: 40px 0;
+    background: #f8f9fb;
+}
+
+.infoContent {
+    padding: 30px 20px;
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.infoBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+    border-radius: 5px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
 .tagline {
     position: absolute;
     left: 53.78%;
@@ -431,25 +238,43 @@
     font: 400 76px/1 Marianna, -apple-system, Roboto, Helvetica, sans-serif;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1015px) {
     .tagline {
         max-width: 100%;
         font-size: 40px;
         margin: 40px 10px 0 0;
-        bottom: 10%;
+        bottom: 6%;
         left: 0;
         width: 100vw;
     }
 }
+@media (max-width: 991px) {
+    .infoBlock {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+}
+@media (max-width: 1016px) {
+    .heroSlogan {
+        border: none;
+    }
+    .tagLine {
+    }
+}
+
+.infoTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.infoText {
+    font-size: 15px;
+    color: #585858;
+}
+@media (max-width: 682px) {
+    .heroText {
+        padding: 0 20px 0 20px;
+    }
 }

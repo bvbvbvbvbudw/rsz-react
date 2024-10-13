@@ -1,0 +1,42 @@
+.shareholdersPage {
+    max-width: none !important;
+    background-color: #e2ddd6;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    /*margin: 24px auto 0;*/
+}
+
+@media (max-width: 991px) {
+    .mainContent {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+.shareholderInfo {
+    margin-top: 30px;
+}
+
+.pageTitle {
+    color: #2d2d2d;
+    text-transform: uppercase;
+    font: 600 32px/1.2 Fixel, sans-serif;
+}
+
+.sectionTitle {
+    color: #2d2d2d;
+    font: 600 26px/1 Fixel, sans-serif;
+    margin-top: 32px;
+}
+
+@media (max-width: 991px) {
+    .pageTitle,
+    .sectionTitle {
+        max-width: 100%;
+    }
+}

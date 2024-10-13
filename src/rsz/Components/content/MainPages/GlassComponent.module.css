@@ -274,8 +274,26 @@
     padding: 30px 20px;
     font: 400 24px/38px Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
 }
-
+@media (max-width: 1152px) {
+    .textContainer {
+        font-size: 15px;
+        line-height: 20px;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .contentSection {
+        margin-left: 10px;
+    }
+}
 @media (max-width: 991px) {
+    .mainContent {
+        margin: 0;
+        padding: 0;
+    }
+    .contentSection{
+        margin: 0;
+    }
     .textContainer {
         max-width: 100%;
     }

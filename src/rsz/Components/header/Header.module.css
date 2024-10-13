@@ -1,0 +1,151 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.header {
+    background: rgba(24, 2, 0, 0.5) url("../../assets/img/header_1920 (1).png") no-repeat center center;
+    background-size: cover;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    min-height: 100px;
+    width: 98%;
+    align-items: center;
+    gap: 40px 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    /*min-width: 240px;*/
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    font: 26px Fixel Display, sans-serif;
+}
+
+.logoImage {
+    aspect-ratio: 0.85;
+    object-fit: cover;
+    width: 51px;
+}
+
+.companyName {
+    margin: auto 0;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font: 15px/26px Noto Sans, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.navItem {
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.activeNavItem {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+    color: #180200;
+    padding: 8px 22px;
+    font-weight: bold;
+}
+
+.languageButton {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #180200;
+    padding: 8px 22px;
+}
+
+.languageButtonContent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.languageIcon {
+    aspect-ratio: 0.82;
+    object-fit: contain;
+    width: 18px;
+}
+
+.hamburger {
+    background: transparent;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.hamburgerMenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 2, 0, 0.9);
+    padding: 20px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.hamburgerMenu.visible {
+    display: flex;
+    animation: fadeIn 0.3s forwards;
+    max-height: 500px;
+}
+
+.hamburgerMenu.hidden {
+    animation: fadeOut 0.3s forwards;
+    max-height: 0;
+}
+
+.navItem:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1009px) {
+    .navigation,
+    .companyName {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}

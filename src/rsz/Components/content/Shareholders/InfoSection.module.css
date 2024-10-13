@@ -1,0 +1,30 @@
+.infoSection {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.infoText {
+    color: #2d2d2d;
+    font: 500 20px/1.2 Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
+    letter-spacing: 0.15px;
+}
+
+.infoLink {
+    color: #00a700;
+    font: 500 20px/1.2 Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
+    letter-spacing: 0.15px;
+    text-decoration: none;
+    border-bottom: 1px solid #00a700;
+    padding-bottom: 2px;
+}
+
+@media (max-width: 991px) {
+    .infoSection,
+    .infoText,
+    .infoLink {
+        max-width: 100%;
+    }
+}

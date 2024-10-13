@@ -1,0 +1,22 @@
+.mainContainer {
+    margin: 0; padding: 0;
+    position: absolute;
+    top: 0;
+    background-color: rgba(226, 221, 214, 1);
+    /*min-height: 2006px;*/
+    width: 100%;
+}
+
+.mainContent {
+    padding: 0 216px;
+}
+
+.articleContainer {
+    margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+    .mainContent {
+        padding: 0 20px;
+    }
+}

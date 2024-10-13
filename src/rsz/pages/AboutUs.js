@@ -21,7 +21,7 @@ const AboutUs = () => {
 
     return (
         <div className={styles.aboutUsPage}>
-            <Header />
+            <Header activeItem="Про нас"/>
             <main className={styles.mainContent}>
                 <Breadcrumbs />
                 <Tabs activeTab={activeTab} onTabClick={handleTabClick} />

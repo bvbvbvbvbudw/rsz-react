@@ -1,0 +1,64 @@
+.articleContent {
+    background-color: rgba(239, 236, 232, 1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden; /* Ensures the gradient stays within the box */
+}
+
+.textContainer {
+    padding: 32px 32px 0;
+    margin-top: 32px;
+}
+
+.articleSubtitle {
+    color: #2d2d2d;
+    text-align: center;
+    font: 600 26px/35px Fixel, -apple-system, Roboto, Helvetica, sans-serif;
+    margin-bottom: 32px;
+}
+
+.mainContent {
+    font: 24px/38px Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
+    letter-spacing: 0.15px;
+    color: rgba(24, 2, 0, 1);
+}
+
+.agenda {
+    margin-top: 32px;
+}
+
+.agendaTitle {
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.agendaList {
+    padding-left: 20px;
+}
+
+.readMore {
+    width: 100%;
+    margin-top: -20px;
+    background-color: rgba(239, 236, 232, 1);
+}
+
+.decorativeImage {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    left: 50%;
+    cursor: pointer;
+    z-index: 9999999;
+    transition-duration: .5s;
+}
+
+.decorativeImage:hover {
+    scale: 1.1;
+}
+
+@media (max-width: 991px) {
+    .articleContent {
+        padding: 20px;
+    }
+}

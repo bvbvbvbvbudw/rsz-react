@@ -1,0 +1,12 @@
+.articleList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+@media (max-width: 991px) {
+    .articleList {
+        max-width: 100%;
+    }
+}

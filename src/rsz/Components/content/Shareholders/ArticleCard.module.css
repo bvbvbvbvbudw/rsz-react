@@ -1,0 +1,74 @@
+.articleCard {
+    border-radius: 8px;
+    background-color: #f6f6f4;
+    padding: 32px;
+    flex: 1;
+    min-width: 240px;
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    .articleCard {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+.articleTitle {
+    color: #180200;
+    font: 500 20px/24px Fixel Text, sans-serif;
+    letter-spacing: 0.15px;
+    margin: 0 0 8px;
+}
+
+.articleDate {
+    color: #676665;
+    font: 400 14px/2 Fixel Text, sans-serif;
+    letter-spacing: 0.1px;
+    margin: 0 0 24px;
+}
+
+.articleDivider {
+    border: none;
+    border-top: 2px solid #5a5856;
+    margin: 0 0 24px;
+}
+
+.articleContent {
+    color: #180200;
+    font: 400 16px/24px Fixel Text, -apple-system, Roboto, Helvetica, sans-serif;
+    letter-spacing: 0.15px;
+    margin: 0 0 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.readMoreButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: #308730;
+    text-transform: uppercase;
+    font: 500 13px/2 Noto Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    letter-spacing: 0.46px;
+    padding: 4px 5px;
+    cursor: pointer;
+}
+
+.readMoreIcon {
+    width: 16px;
+    height: 18px;
+}
+
+.articleIcon {
+    position: absolute;
+    top: 134px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 46px;
+    height: 46px;
+}
