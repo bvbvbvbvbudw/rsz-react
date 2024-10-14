@@ -4,6 +4,8 @@ import styles from './Header.module.css';
 export default function Header({ activeItem }) {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 1009);
     const [menuOpen, setMenuOpen] = useState(false);
+    const [languageMenuOpen, setLanguageMenuOpen] = useState(false); // Управление отображением меню языков
+    const [selectedLanguage, setSelectedLanguage] = useState(''); // Храним выбранный язык
 
     const navItems = [
         { label: 'Головна', url: "/" },
@@ -13,16 +15,12 @@ export default function Header({ activeItem }) {
         { label: 'Контакти', url: "/contacts" },
     ];
 
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
-
-    // Закрываем меню при изменении размера окна
+    // При изменении размера окна скрываем меню на десктопе
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 1009);
             if (window.innerWidth > 1009) {
-                setMenuOpen(false); // закрываем меню при десктопе
+                setMenuOpen(false);
             }
         };
         window.addEventListener('resize', handleResize);
@@ -30,6 +28,28 @@ export default function Header({ activeItem }) {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
+    // Восстанавливаем язык из localStorage
+    useEffect(() => {
+        const savedLanguage = localStorage.getItem('selectedLanguage');
+        if (savedLanguage) {
+            setSelectedLanguage(savedLanguage);
+        }
+    }, []);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
+    const toggleLanguageMenu = () => {
+        setLanguageMenuOpen(!languageMenuOpen);
+    };
+
+    const handleLanguageSelect = (languageCode) => {
+        setSelectedLanguage(languageCode);
+        localStorage.setItem('selectedLanguage', languageCode);
+        setLanguageMenuOpen(false); // Закрываем меню после выбора
+    };
 
     return (
         <header className={styles.header}>
@@ -44,6 +64,7 @@ export default function Header({ activeItem }) {
                     Рокитнівський скляний завод
                 </div>
             </div>
+
             {!isMobile && (
                 <nav className={styles.navigation}>
                     {navItems.map((item, index) => (
@@ -57,18 +78,22 @@ export default function Header({ activeItem }) {
                     ))}
                 </nav>
             )}
+
             <div className={styles.cont}>
-                <button className={styles.languageButton}>
+                <button className={styles.languageButton} onClick={toggleLanguageMenu}>
                     <div className={styles.languageButtonContent}>
                         <img
                             loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/33a79b7feff5a9a7a9fade78ccad0c1ea99a310d33d0eb014af10fe060c2f077?placeholderIfAbsent=true&apiKey=4de2176252d24e8ebcd3e8166c772c27"
                             className={styles.languageIcon}
-                            alt=""
+                            alt="language"
                         />
-                        <span className={styles.languageText}>МОВА</span>
+                        <span className={styles.languageText}>
+                            {selectedLanguage || 'МОВА'}
+                        </span>
                     </div>
                 </button>
+
                 {isMobile && (
                     <button className={styles.hamburger} onClick={toggleMenu}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 18 14" fill="none">
@@ -82,6 +107,15 @@ export default function Header({ activeItem }) {
                     </button>
                 )}
             </div>
+
+            {languageMenuOpen && (
+                <div className={styles.languageMenu}>
+                    <div onClick={() => handleLanguageSelect('UA')}>Українська</div>
+                    <div onClick={() => handleLanguageSelect('EN')}>English</div>
+                    <div onClick={() => handleLanguageSelect('RU')}>Русский</div>
+                </div>
+            )}
+
             {menuOpen && isMobile && (
                 <nav className={`${styles.hamburgerMenu} ${menuOpen ? styles.visible : styles.hidden}`}>
                     {navItems.map((item, index) => (

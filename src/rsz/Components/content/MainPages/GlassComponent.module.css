@@ -255,9 +255,11 @@
 
 @media (max-width: 991px) {
     .sectionTitle {
+        margin-left: 80px;
         max-width: 100%;
         font-size: 40px;
     }
+
 }
 
 .textContainer {
@@ -346,14 +348,18 @@
 
 @media (max-width: 991px) {
     .slogan {
-        max-width: 100%;
+        width: auto;
         font-size: 34px;
+        white-space: nowrap;
     }
 }
 @media (max-width: 587px) {
+
     .slogan {
+        width: 80%;
+        white-space: normal;
         margin-left: 20px;
-        top: 84%;
+        bottom: 1%;
     }
 }
 
