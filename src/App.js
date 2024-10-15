@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-// TODO: всем надо сделать адаптив. Сделать смену языков логику
-// TODO: делать все с анимациями. Перечитать тз.
+
+// TODO: Перечитать тз.
 //  Сделать логику чтобы по апи загружались сохранялись картинки которые бекграунд Главной
-// TODO: Хедер на внутр страницах другой, сделай простенький адаптив на них.
+// TODO: Хедер на внутр страницах другой
 
 import './rsz/assets/fonts/fonts.css';
 import Products from "./rsz/pages/Products";
@@ -16,9 +16,10 @@ import AboutUs from "./rsz/pages/AboutUs";
 import ShareholdersPage from "./rsz/pages/ShareholdersPage";
 import SinglePage from "./rsz/Components/content/Shareholders/Single/SinglePage";
 
-// TODO: Поправить про нас отступы. Адаптив. Новые страницы. Логику на фото сделать
+// TODO: Логику на фото сделать
 // TODO: сделать переводы. Сделать логику разворачивание. Сделать ховеры.
 //  Про нас(Серт) поправить нижгюю штуку. Сделать фильтр. Добавить гугл карту. Поправить футер иконки
+//  сделать адаптив на продуктах. Сделать логику перевода уже
 export default function App() {
 
   return (
