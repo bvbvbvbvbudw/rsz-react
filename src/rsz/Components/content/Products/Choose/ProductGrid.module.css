@@ -5,8 +5,29 @@
     justify-content: center;
 }
 
+.productGrid > * {
+    flex: 1 1 calc(33.33% - 16px);
+    max-width: 495px;
+    min-width: 329px;
+    box-sizing: border-box;
+}
+
 @media (max-width: 991px) {
     .productGrid {
         max-width: 100%;
+    }
+}
+
+@media (max-width: 532px) {
+    .productGrid > * {
+        flex: 1 1 100%;
+        max-width: 100%;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .productGrid > * {
+        min-width: auto;
     }
 }

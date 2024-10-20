@@ -1,6 +1,7 @@
 import React from 'react';
 import TenderCard from './TenderCard';
 import styles from './TenderSection.module.css';
+import {useTranslation} from "react-i18next";
 
 const tenderData = [
     {
@@ -49,9 +50,10 @@ const tenderData = [
 ];
 
 function TenderSection() {
+    const {t} = useTranslation()
     return (
         <section className={styles.tenderSection}>
-            <a href="#" className={styles.instructionLink}>Інструкція для учасників</a>
+            <a href="#" className={styles.instructionLink}>{t('about.third.inst')}</a>
             <h2 className={styles.sectionTitle}>Конкурс з відбору суб'єктів аудиторської діяльності:</h2>
             <div className={styles.tenderGrid}>
                 {tenderData.map((tender, index) => (

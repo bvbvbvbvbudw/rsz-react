@@ -33,7 +33,7 @@
     font-weight: 500;
     text-transform: uppercase;
     justify-content: space-between;
-    padding: 0 50px 0 20px;
+    padding: 0 0 0 20px;
 }
 
 .logo {
@@ -43,6 +43,7 @@
     gap: 20px;
     color: #fff;
     font: 26px Fixel Display, sans-serif;
+    cursor: pointer;
 }
 
 .logoImage {
@@ -50,7 +51,11 @@
     object-fit: cover;
     width: 51px;
 }
-
+.nonIndexed {
+    background: url("../../assets/img/header_1920 (1).png"), linear-gradient(180deg, rgba(0, 150, 49, 0.8) 0%, rgba(0, 167, 0, 0.8) 100%), rgba(68, 68, 68, 0.5);
+    background-blend-mode: normal, normal, hard-light;
+    backdrop-filter: blur(40px);
+}
 .companyName {
     margin: auto 0;
 }
@@ -77,6 +82,8 @@
     text-align: center;
     padding: 8px 22px;
     font-weight: bold;
+    white-space: nowrap;
+    text-decoration: none;
 }
 
 .languageButton {
@@ -88,6 +95,11 @@
     margin-right: 40px;
     padding: 8px 22px;
     border: none;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+.languageButton:hover {
+    scale: 1.1;
 }
 
 .languageButtonContent {
@@ -159,14 +171,16 @@
 .languageMenu {
     position: absolute;
     top: 100%;
-    right: 5%;
+    right: 5%; /* Changed from 15% to 5% */
     background-color: rgba(255, 255, 255, 0.9);
     padding: 10px;
     border-radius: 4px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     animation: fadeInOpacity 0.5s ease-in-out;
     z-index: 1000;
+    cursor: pointer;
 }
+
 
 .languageMenu div {
     padding: 10px;

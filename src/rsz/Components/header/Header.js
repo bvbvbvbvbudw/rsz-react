@@ -1,21 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Header.module.css';
+import { useTranslation } from 'react-i18next';
+import i18n from "i18next";
 
 export default function Header({ activeItem }) {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 1009);
     const [menuOpen, setMenuOpen] = useState(false);
-    const [languageMenuOpen, setLanguageMenuOpen] = useState(false); // Управление отображением меню языков
-    const [selectedLanguage, setSelectedLanguage] = useState(''); // Храним выбранный язык
+    const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
+    const [selectedLanguage, setSelectedLanguage] = useState('');
+    const [nonIndexedClass, setNonIndexedClass] = useState('');
+
+    const { t } = useTranslation();
 
     const navItems = [
-        { label: 'Головна', url: "/" },
-        { label: 'Про нас', url: "/about" },
-        { label: 'Продукція', url: "/products" },
-        { label: 'Акціонерам', url: "/shareholders" },
-        { label: 'Контакти', url: "/contacts" },
+        { name: "Головна", label: t('header.main'), url: "/" },
+        { name: "Про нас", label: t('header.about'), url: "/about" },
+        { name: "Продукція", label: t('header.production'), url: "/products" },
+        { name: "Акціонерам", label: t('header.shareholders'), url: "/shareholders" },
+        { name: "Контакти", label: t('header.contacts'), url: "/contacts" },
     ];
+    useEffect(() => {
+        const currentUrl = window.location.pathname;
+        if (currentUrl !== '/') {
+            setNonIndexedClass(styles.nonIndexed);
+        } else {
+            setNonIndexedClass('');
+        }
+    }, [window.location.pathname]);
 
-    // При изменении размера окна скрываем меню на десктопе
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 1009);
@@ -29,7 +41,6 @@ export default function Header({ activeItem }) {
         };
     }, []);
 
-    // Восстанавливаем язык из localStorage
     useEffect(() => {
         const savedLanguage = localStorage.getItem('selectedLanguage');
         if (savedLanguage) {
@@ -48,12 +59,13 @@ export default function Header({ activeItem }) {
     const handleLanguageSelect = (languageCode) => {
         setSelectedLanguage(languageCode);
         localStorage.setItem('selectedLanguage', languageCode);
-        setLanguageMenuOpen(false); // Закрываем меню после выбора
+        i18n.changeLanguage(languageCode);
+        setLanguageMenuOpen(false);
     };
 
     return (
-        <header className={styles.header}>
-            <div className={styles.logo}>
+        <header className={`${styles.header} ${nonIndexedClass}`}>
+            <div className={styles.logo} onClick={() => {window.location = '/'}}>
                 <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/9e19ae2578ed0f84a38415cf7504dffc6ea3d03a2d421991fb03db01e8f06df2?placeholderIfAbsent=true&apiKey=4de2176252d24e8ebcd3e8166c772c27"
@@ -61,7 +73,7 @@ export default function Header({ activeItem }) {
                     alt="Рокитнівський скляний завод logo"
                 />
                 <div className={styles.companyName}>
-                    Рокитнівський скляний завод
+                    {t('header.slogan')}
                 </div>
             </div>
 
@@ -71,7 +83,7 @@ export default function Header({ activeItem }) {
                         <a
                             key={index}
                             href={item.url}
-                            className={item.label === activeItem ? styles.activeNavItem : styles.navItem}
+                            className={item.name === activeItem ? styles.activeNavItem : styles.navItem}
                         >
                             <div className={styles.navItemBase}>{item.label}</div>
                         </a>
@@ -88,7 +100,7 @@ export default function Header({ activeItem }) {
                             className={styles.languageIcon}
                             alt="language"
                         />
-                        <span className={styles.languageText}>
+                        <span className={styles.languageText} style={{textTransform: "uppercase"}}>
                             {selectedLanguage || 'МОВА'}
                         </span>
                     </div>
@@ -110,9 +122,10 @@ export default function Header({ activeItem }) {
 
             {languageMenuOpen && (
                 <div className={styles.languageMenu}>
-                    <div onClick={() => handleLanguageSelect('UA')}>Українська</div>
-                    <div onClick={() => handleLanguageSelect('EN')}>English</div>
-                    <div onClick={() => handleLanguageSelect('RU')}>Русский</div>
+                    <div onClick={() => handleLanguageSelect('ua')}>Українська</div>
+                    <div onClick={() => handleLanguageSelect('en')}>English</div>
+                    <div onClick={() => handleLanguageSelect('de')}>Deutsch</div>
+                    <div onClick={() => handleLanguageSelect('pl')}>Polski</div>
                 </div>
             )}
 

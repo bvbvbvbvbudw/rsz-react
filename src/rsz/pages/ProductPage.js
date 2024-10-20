@@ -6,13 +6,22 @@ import ProductionInfo from '../Components/content/Products/Choose/ProductionInfo
 import styles from '../Components/content/Products/Choose/ProductPage.module.css';
 import Header from "../Components/header/Header";
 import Footer from "../Components/footer/Footer";
+import Breadcrumbs from "../Components/content/Products/Breadcrumbs";
+
+import {useTranslation} from "react-i18next";
 
 const ProductPage = () => {
+    const {t} = useTranslation()
     return (
         <div className={styles.productPage}>
             <Header activeItem="Продукція" />
-            <main className={styles.mainContent}>
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3f506ac12f2cf6615cb7353be754a3d8c2c28b14d4178c049b9cbacb7dd77d4a?placeholderIfAbsent=true&apiKey=4de2176252d24e8ebcd3e8166c772c27" alt="Hero banner" className={styles.heroBanner} />
+            <section className={styles.mainContent}>
+                <div className={styles.topContent}>
+                    <div className={styles.breadcrumbs}>
+                        <Breadcrumbs theme="white"/>
+                    </div>
+                    <p className={styles.slogan}>{t('main.wine.slogan')}</p>
+                </div>
                 <div className={styles.productSection}>
                     <ProductFilter />
                     <div className={styles.productDisplay}>
@@ -21,7 +30,7 @@ const ProductPage = () => {
                     </div>
                 </div>
                 <ProductionInfo />
-            </main>
+            </section>
             <Footer />
         </div>
     );

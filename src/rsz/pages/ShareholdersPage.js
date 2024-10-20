@@ -7,16 +7,19 @@ import Breadcrumbs from "../Components/content/Products/Breadcrumbs";
 import Footer from "../Components/footer/Footer";
 import Pagination from "../Components/content/Products/Choose/Pagination";
 
+import {useTranslation} from "react-i18next";
+
 const ShareholdersPage = () => {
+    const {t} = useTranslation()
     return (
         <div className={styles.shareholdersPage}>
             <Header activeItem="Акціонерам"/>
             <main className={styles.mainContent}>
                 <Breadcrumbs />
                 <section className={styles.shareholderInfo}>
-                    <h1 className={styles.pageTitle}>Акціонерам</h1>
+                    <h1 className={styles.pageTitle}>{t('header.shareholders')}</h1>
                     <InfoSection />
-                    <h2 className={styles.sectionTitle}>Інформація для акціонерів та стейкхолдерів оприлюднена до 01.01.2024 року</h2>
+                    <h2 className={styles.sectionTitle}>{t('shareholders.title')}</h2>
                     <ArticleList />
                 </section>
                 <Pagination />

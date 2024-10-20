@@ -92,3 +92,8 @@
         left: 20px;
     }
 }
+@media (max-width: 400px) {
+    .productInfo {
+        width: 115px;
+    }
+}

@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './ProductCard.module.css';
+import {useTranslation} from "react-i18next";
 
 const ProductCard = ({ name, height, diameter, volume, weight, image, url }) => {
+    const {t} = useTranslation()
     return (
         <div className={styles.productCard} onClick={() => window.location.href = url}>
             <img src={image} alt={name} className={styles.productImage} />
@@ -11,19 +13,19 @@ const ProductCard = ({ name, height, diameter, volume, weight, image, url }) => 
                 <ul className={styles.productSpecs}>
                     <li className={styles.specItem}>
                         <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/473b5ea9ff74c9e7784fa74b361a1480d0690383700dadbd8067c9e0e858f0b6?placeholderIfAbsent=true&apiKey=4de2176252d24e8ebcd3e8166c772c27" alt="Height icon" className={styles.specIcon} />
-                        <span>{height} мм.</span>
+                        <span>{height} {t('filters.mm')}</span>
                     </li>
                     <li className={styles.specItem}>
                         <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7726de03b9e26da5ebedf76ba0d1644d6bbd771558c0f7f50174cc4f2cf6b577?placeholderIfAbsent=true&apiKey=4de2176252d24e8ebcd3e8166c772c27" alt="Diameter icon" className={styles.specIcon} />
-                        <span>{diameter} мм.</span>
+                        <span>{diameter} {t('filters.mm')}</span>
                     </li>
                     <li className={styles.specItem}>
                         <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d93cf96f16c212eee91ee3229ff6939a5ad3aba8406f6f89085ee12aa4c41782?placeholderIfAbsent=true&apiKey=4de2176252d24e8ebcd3e8166c772c27" alt="Volume icon" className={styles.specIcon} />
-                        <span>{volume} мл.</span>
+                        <span>{volume} {t('filters.ml')}</span>
                     </li>
                     <li className={styles.specItem}>
                         <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bdadc821c4e8948351bd41903d4b5e1a0377dfd1abe8adeeaa1980ff1f115043?placeholderIfAbsent=true&apiKey=4de2176252d24e8ebcd3e8166c772c27" alt="Weight icon" className={styles.specIcon} />
-                        <span>{weight} г.</span>
+                        <span>{weight} {t('filters.g')}.</span>
                     </li>
                 </ul>
                 <div className={styles.actionButtons}>

@@ -5,8 +5,10 @@ import bg from '../../../assets/img/background.png';
 import photo from '../../../assets/img/photo.png';
 
 import './style.css';
+import {useTranslation} from "react-i18next";
 
 export default function ThirdPage() {
+    const {t} = useTranslation();
     return (
         <>
             <div className={styles.glassContainer}>
@@ -15,20 +17,16 @@ export default function ThirdPage() {
                         loading="lazy"
                         src={bg}
                         className={styles.backgroundImage}
-                        alt=""
+                        alt="BG"
                     />
                     <div className="container">
                         <img src={photo} className="photo" alt="Photo" />
                         <div className="info">
-                            <div className={styles.title}>Нам понад 125 років</div>
-                            <p className={styles.topDescription}>
-                                Завдяки багаторічному досвіду у галузі скловаріння, вигідному розташуванню кварцових піщаних кар'єрів та систематичному технічному вдосконаленню виробничого процесу, ПрАТ «Рокитнівський скляний завод», який працює з 1898 року, успішно входить у трійку лідерів виробників скляних пляшок в Україні.
-                            </p>
+                            <div className={styles.title}>{t('main.history.title')}</div>
+                            <p className={styles.topDescription}>{t('main.history.top_description')}</p>
                             <div className={styles.bottomWrapper}>
-                                <p className={styles.leftSide}>Покриваємо усі ризики</p>
-                                <p className={styles.bottomDescription}>
-                                    Хоча рідко, але можливі непередбачені обставини, які можуть вплинути на доставку. Навіть у випадку таких ситуацій, ми готові вирішити всі непорозуміння, навіть в умовах виникнення надзвичайних обставин.
-                                </p>
+                                <p className={styles.leftSide}>{t('main.history.left_side')}</p>
+                                <p className={styles.bottomDescription}>{t('main.history.bottom_description')}</p>
                             </div>
                         </div>
                     </div>

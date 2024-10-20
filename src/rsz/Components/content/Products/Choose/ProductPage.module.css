@@ -1,5 +1,43 @@
+.topContent {
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    background-image: url("../../../../assets/img/4-1_etap 1.png");
+}
+
+.topContent img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.slogan {
+    width: auto;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Marianna';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 10px #000000;
+}
+
+
 .productPage {
     background-color: #e2ddd6;
+}
+
+.breadcrumbs {
+    margin: 0;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
 }
 
 .mainContent {
@@ -37,5 +75,26 @@
 
     .heroBanner {
         margin-top: -50px;
+    }
+    .slogan {
+        font-size: 60px
+    }
+}
+@media (max-width: 550px) {
+    .slogan {
+        font-size: 40px;
+    }
+}
+@media (max-width: 380px) {
+    .slogan {
+        font-size: 30px;
+    }
+}
+@media (max-width: 380px) {
+    .slogan {
+        width: 100%;
+        text-align: center;
+        white-space: normal;
+        font-size: 35px;
     }
 }

@@ -5,7 +5,10 @@ import Pagination from './Pagination';
 import WorldMap from './WorldMap';
 import AdvantagesList from '../../Advantages/Advantages';
 
+import {useTranslation} from "react-i18next";
+
 const GlobalPartners = () => {
+    const {t} = useTranslation();
     const [currentPage, setCurrentPage] = useState(1);
     const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -21,8 +24,8 @@ const GlobalPartners = () => {
 
     const getTitle = () => {
         return currentPage === 1
-            ? 'Глобальна мережа партнерів з інших країн світу'
-            : 'Наші переваги';
+            ? t('main.global.title.first')
+            : t('main.global.title.second');
     };
 
     return (
@@ -33,8 +36,8 @@ const GlobalPartners = () => {
                         <h1 className={styles.title}>{getTitle()}</h1>
                         <p className={styles.description}>
                             {currentPage === 1
-                                ? 'Наша компанія володіє високим рівнем довіри з боку інших країн. Це визнання свідчить про надійність та якість наших продуктів та послуг, що робить нас надійним партнером у міжнародних відносинах.'
-                                : 'Ми надаємо унікальні переваги, які роблять нас надійним партнером для наших клієнтів та покупців.'}
+                                ? t('main.global.description.first')
+                                : t('main.global.description.second')}
                         </p>
                     </div>
 

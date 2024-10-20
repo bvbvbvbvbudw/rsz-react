@@ -7,7 +7,10 @@ import ContactForm from "../Components/content/Contacts/ContactForm";
 import MapImage from "../Components/content/Contacts/MapImage";
 import Footer from "../Components/footer/Footer";
 
+import {useTranslation} from "react-i18next";
+
 function ContactPage() {
+    const {t} = useTranslation();
     return (
         <div className={styles.contactPage}>
             <Header activeItem="Контакти"/>
@@ -18,7 +21,7 @@ function ContactPage() {
                             <span className={styles.visuallyHidden}>Home</span>
                             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/92d4ab29d6655e95a46bf4b61b7c655837aaf3958824771b951482c66116dc59?placeholderIfAbsent=true&apiKey=4de2176252d24e8ebcd3e8166c772c27" alt="" className={styles.homeIcon} />
                         </a>
-                        <span className={styles.currentPage}>Контакти</span>
+                        <span className={styles.currentPage}>{t('header.contacts')}</span>
                     </div>
                     <div className={styles.contentWrapper}>
                         <ContactInfo />

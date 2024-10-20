@@ -1,56 +1,57 @@
 import React from 'react';
 import styles from './ContactForm.module.css';
+import { useTranslation } from 'react-i18next';
 
 function ContactForm() {
+    const { t } = useTranslation();
+
     return (
         <section className={styles.contactForm}>
-            <h2 className={styles.formTitle}>Звʼязатись з нами</h2>
+            <h2 className={styles.formTitle}>{t('contactForm.title')}</h2>
             <form className={styles.form}>
                 <div className={styles.formRow}>
                     <div className={styles.formGroup}>
-                        <label htmlFor="firstName" className={styles.visuallyHidden}>Ваше ім'я*</label>
-                        <input type="text" id="firstName" name="firstName" placeholder="Ваше ім'я*" required className={styles.formInput} />
+                        <label htmlFor="firstName" className={styles.visuallyHidden}>{t('contactForm.firstName')}</label>
+                        <input type="text" id="firstName" name="firstName" placeholder={t('contactForm.firstName')} required className={styles.formInput} />
                     </div>
                     <div className={styles.formGroup}>
-                        <label htmlFor="lastName" className={styles.visuallyHidden}>Ваше прізвище*</label>
-                        <input type="text" id="lastName" name="lastName" placeholder="Ваше прізвище*" required className={styles.formInput} />
+                        <label htmlFor="lastName" className={styles.visuallyHidden}>{t('contactForm.lastName')}</label>
+                        <input type="text" id="lastName" name="lastName" placeholder={t('contactForm.lastName')} required className={styles.formInput} />
                     </div>
                 </div>
                 <div className={styles.formRow}>
                     <div className={styles.formGroup}>
-                        <label htmlFor="phone" className={styles.visuallyHidden}>Ваш номер телефону*</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Ваш номер телефону*" required className={styles.formInput} />
+                        <label htmlFor="phone" className={styles.visuallyHidden}>{t('contactForm.phone')}</label>
+                        <input type="tel" id="phone" name="phone" placeholder={t('contactForm.phone')} required className={styles.formInput} />
                     </div>
                     <div className={styles.formGroup}>
-                        <label htmlFor="email" className={styles.visuallyHidden}>Ваш Email*</label>
-                        <input type="email" id="email" name="email" placeholder="Ваш Email*" required className={styles.formInput} />
+                        <label htmlFor="email" className={styles.visuallyHidden}>{t('contactForm.email')}</label>
+                        <input type="email" id="email" name="email" placeholder={t('contactForm.email')} required className={styles.formInput} />
                     </div>
                 </div>
                 <div className={styles.formGroup}>
-                    <label htmlFor="company" className={styles.visuallyHidden}>Компанія*</label>
-                    <input type="text" id="company" name="company" placeholder="Компанія*" required className={styles.formInput} />
+                    <label htmlFor="company" className={styles.visuallyHidden}>{t('contactForm.company')}</label>
+                    <input type="text" id="company" name="company" placeholder={t('contactForm.company')} required className={styles.formInput} />
                 </div>
                 <div className={styles.formRow}>
                     <div className={styles.formGroup}>
-                        <label htmlFor="country" className={styles.visuallyHidden}>Країна</label>
+                        <label htmlFor="country" className={styles.visuallyHidden}>{t('contactForm.country')}</label>
                         <select id="country" name="country" className={styles.formSelect}>
-                            <option value="">Країна</option>
-                            {/* Add country options here */}
+                            <option value="">{t('contactForm.country')}</option>
                         </select>
                     </div>
                     <div className={styles.formGroup}>
-                        <label htmlFor="market" className={styles.visuallyHidden}>Ринок</label>
+                        <label htmlFor="market" className={styles.visuallyHidden}>{t('contactForm.market')}</label>
                         <select id="market" name="market" className={styles.formSelect}>
-                            <option value="">Ринок</option>
-                            {/* Add market options here */}
+                            <option value="">{t('contactForm.market')}</option>
                         </select>
                     </div>
                 </div>
                 <div className={styles.formGroup}>
-                    <label htmlFor="message" className={styles.visuallyHidden}>Ваше повідомлення</label>
-                    <textarea id="message" name="message" placeholder="Ваше повідомлення" className={styles.formTextarea}></textarea>
+                    <label htmlFor="message" className={styles.visuallyHidden}>{t('contactForm.message')}</label>
+                    <textarea id="message" name="message" placeholder={t('contactForm.message')} className={styles.formTextarea}></textarea>
                 </div>
-                <button type="submit" className={styles.submitButton}>Відправити</button>
+                <button type="submit" className={styles.submitButton}>{t('contactForm.submit')}</button>
             </form>
         </section>
     );

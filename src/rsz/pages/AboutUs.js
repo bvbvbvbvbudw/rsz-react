@@ -12,7 +12,10 @@ import Footer from "../Components/footer/Footer";
 import CertificationPage from "../Components/content/About/Cert/CertificationPage";
 import TenderPage from "../Components/content/About/Tender/TenderPage";
 
+import {useTranslation} from "react-i18next";
+
 const AboutUs = () => {
+    const {t} = useTranslation();
     const [activeTab, setActiveTab] = useState('first');
 
     const handleTabClick = (tab) => {
@@ -27,13 +30,11 @@ const AboutUs = () => {
                 <Tabs activeTab={activeTab} onTabClick={handleTabClick} />
                 <section className={styles.aboutUsSection}>
                     <div id="first" className={`${styles.tabContent} ${activeTab === 'first' ? styles.active : ''}`}>
-                        <h1 className={styles.pageTitle}>Про нас</h1>
+                        <h1 className={styles.pageTitle}>{t('header.about')}</h1>
                         <CompanyInfo />
                         <ClientList />
                         <ExportCountries />
-                        <p className={styles.companySlogan}>
-                            ПрАТ «Рокитнівський скляний завод» – це сучасне високорозвинуте підприємство та Ваш надійний партнер!
-                        </p>
+                        <p className={styles.companySlogan}>{t('about.first.slogan')}</p>
                     </div>
                     <div id="second" className={`${styles.tabContent} ${activeTab === 'second' ? styles.active : ''}`}>
                         <CertificationPage />

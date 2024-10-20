@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import './i18n';
 
 
 // TODO: Перечитать тз.
 //  Сделать логику чтобы по апи загружались сохранялись картинки которые бекграунд Главной
-// TODO: Хедер на внутр страницах другой
 
 import './rsz/assets/fonts/fonts.css';
 import Products from "./rsz/pages/Products";
@@ -17,9 +17,9 @@ import ShareholdersPage from "./rsz/pages/ShareholdersPage";
 import SinglePage from "./rsz/Components/content/Shareholders/Single/SinglePage";
 
 // TODO: Логику на фото сделать
-// TODO: сделать переводы. Сделать логику разворачивание. Сделать ховеры.
-//  Про нас(Серт) поправить нижгюю штуку. Сделать фильтр. Добавить гугл карту. Поправить футер иконки
-//  сделать адаптив на продуктах. Сделать логику перевода уже
+//  Про нас(Серт) поправить нижгюю штуку. Добавить гугл карту.
+//   крошки/допереводить
+import './i18n';
 export default function App() {
 
   return (

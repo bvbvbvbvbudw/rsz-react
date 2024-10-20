@@ -1,0 +1,233 @@
+{
+  "header": {
+    "main": "Home",
+    "about": "About Us",
+    "production": "Production",
+    "shareholders": "For Shareholders",
+    "contacts": "Contacts",
+    "slogan": "Rokitno Glass Factory"
+  },
+  "main": {
+    "hero": {
+      "label": "year of establishment",
+      "slogan": "We manufacture and deliver",
+      "tag": "Glass as a work of art"
+    },
+    "glass": {
+      "title": "Why Glass?",
+      "text_content": "First of all, glass is the ideal material for storing beverages, as it does not interact with their composition, thus preserving the unparalleled taste and quality of the drink throughout its shelf life.",
+      "text_content_second": "Additionally, glass has a high degree of recyclability and environmental cleanliness. Unlike plastic, which is often used for packaging materials, glass can be fully recycled without losing its quality. This helps reduce negative environmental impact and promotes sustainable production.",
+      "slogan": "Preserving the unique taste for every manufacturer!"
+    },
+    "history": {
+      "title": "We are over 125 years old",
+      "top_description": "With many years of experience in glassmaking, a favorable location of quartz sand quarries, and systematic technical improvements in the production process, the public joint-stock company ‘Rokitno Glass Factory’, operating since 1898, successfully ranks among the top three producers of glass bottles in Ukraine.",
+      "left_side": "We cover all risks",
+      "bottom_description": "Although it is rare, unforeseen circumstances may affect delivery. Even in such situations, we are ready to resolve all misunderstandings, even in the event of emergencies."
+    },
+    "wine": {
+      "slider": {
+        "first": "Beer Packaging",
+        "second": "Wine Packaging",
+        "third": "Mineral Water Packaging",
+        "fourth": "Packaging for Chemical Liquids"
+      },
+      "slogan": "Glass as a work of art"
+    },
+    "global": {
+      "title": {
+        "first": "Global network of partners from around the world",
+        "second": "Our Advantages"
+      },
+      "description": {
+        "first": "Our company has a high level of trust from other countries. This recognition indicates the reliability and quality of our products and services, making us a dependable partner in international relations.",
+        "second": "We provide unique advantages that make us a reliable partner for our clients and customers."
+      },
+      "partner": {
+        "netherlands": "Netherlands",
+        "sweden": "Sweden",
+        "latvia": "Latvia",
+        "italy": "Italy",
+        "belgium": "Belgium",
+        "norway": "Norway",
+        "romania": "Romania",
+        "spain": "Spain",
+        "france": "France",
+        "estonia": "Estonia",
+        "finland": "Finland",
+        "lithuania": "Lithuania",
+        "title": "Our partners include countries such as:"
+      },
+      "advantages": {
+        "first": "We integrate into new projects quickly, ensuring effective collaboration with partners.",
+        "second": "We always find a compromise with each buyer, taking their needs and wishes into account.",
+        "third": "Meeting our obligations to supply products is our top priority, even in case of force majeure."
+      }
+    }
+  },
+  "products": {
+    "beerPackaging": "Beer Packaging",
+    "standardBeerPackaging": "Standard Beer Packaging",
+    "exclusiveBeerPackaging": "Exclusive Beer Packaging",
+    "winePackaging": "Wine Packaging",
+    "standardWinePackaging": "Standard Wine Packaging",
+    "exclusiveWinePackaging": "Exclusive Wine Packaging",
+    "chemicalLiquidPackaging": "Chemical Liquid Packaging",
+    "standardChemicalLiquidPackaging": "Standard Chemical Liquid Packaging",
+    "otherPackaging": "Other Packaging",
+    "standardOtherPackaging": "Standard Other Packaging",
+    "exclusiveOtherPackaging": "Exclusive Other Packaging"
+  },
+  "filters": {
+    "clearFilters": "clear filters",
+    "categories": "Categories:",
+    "typeOfContainer": "Type of Container:",
+    "typeOfCap": "Type of Cap:",
+    "color": "Color:",
+    "characteristics": "Characteristics:",
+    "volume": "Volume (ml):",
+    "height": "Height (mm):",
+    "diameter": "Diameter (mm):",
+    "weight": "Weight (g):",
+    "beer": "For Beer",
+    "wine": "For Wine",
+    "water": "For Mineral Water",
+    "chemicals": "For Chemical Liquids",
+    "typical": "Typical",
+    "exclusive": "Exclusive",
+    "crown": "Crown Cap",
+    "kpsh": "KPSH",
+    "p295": "P-29.5",
+    "pr335": "PR-33.5",
+    "green": "Green",
+    "brown": "Brown",
+    "kg": "kg",
+    "mm": "mm",
+    "ml": "ml",
+    "g": "g"
+  },
+  "product": {
+    "title": "Our Production Products",
+    "factoryImageAlt": "Factory production line",
+    "highlight": "The enterprise specializes in producing exclusive glass containers that modern consumers require.",
+    "description1": "The factory's products meet European quality standards and can satisfy the most discerning tastes. Our enterprise develops bottle shapes according to the wishes and requests of clients.",
+    "description2": "The company specializes in producing bottles in green and brown glass ranging from 0.2 to 1.0 liters. The public joint-stock company 'Rokitno Glass Factory' has about 50 proprietary bottle designs.",
+    "qualityTitle": "Product Quality",
+    "qualityDescription": "– is the highest priority of our operations! This postulate is the foundation of the entire enterprise's work. The pursuit of improving consumer properties is a predominant direction towards our goal.",
+    "timelinessTitle": "The most accurate fulfillment of customer wishes in the shortest time",
+    "timelinessDescription": "– is an important feature that customers choose our enterprise for. Only with us can you go from the first inquiry to receiving trial samples of new products in three days.",
+    "improvement": "The pursuit of constant improvement in technology provides the opportunity to produce higher quality products while maintaining a balance of cost. This is the foundation of development and confidence in the future.",
+    "experience": "The long-standing experience of the enterprise, preservation and improvement of traditions, confirmed by the work of labor dynasties within the team, ensures quality that is demanded worldwide.",
+    "specifications": "Specifications",
+    "packaging": "Packaging",
+    "pack": {
+      "bottlesPerPallet": {
+        "label": "Number of bottles per pallet",
+        "alt": "Icon for number of bottles per pallet"
+      },
+      "rowsPerPallet": {
+        "label": "Number of rows per pallet",
+        "alt": "Icon for number of rows per pallet"
+      },
+      "bottlesPerRow": {
+        "label": "Number of bottles per row",
+        "alt": "Icon for number of bottles per row"
+      },
+      "palletWeight": {
+        "label": "Pallet weight",
+        "alt": "Icon for pallet weight"
+      },
+      "palletSize": {
+        "label": "Pallet dimensions",
+        "alt": "Icon for pallet dimensions"
+      }
+    },
+    "spec": {
+      "capacity": {
+        "label": "Capacity",
+        "alt": "Icon for capacity"
+      },
+      "height": {
+        "label": "Height",
+        "alt": "Icon for height"
+      },
+      "diameter": {
+        "label": "Diameter",
+        "alt": "Icon for diameter"
+      },
+      "weight": {
+        "label": "Weight",
+        "alt": "Icon for weight"
+      },
+      "glassColor": {
+        "label": "Glass Color",
+        "alt": "Icon for glass color"
+      },
+      "corkType": {
+        "label": "Type of Cap",
+        "alt": "Icon for type of cap"
+      },
+      "circulationType": {
+        "label": "Type of Circulation",
+        "alt": "Icon for type of circulation"
+      }
+    },
+    "nominal": "Nominal",
+    "full": "Full",
+    "greenBrown": "Green/Brown",
+    "capType": "Type of Cap",
+    "crownCap": "Crown Cap",
+    "recirculating": "Recirculating"
+  },
+  "contact": {
+    "title": "Contacts",
+    "reception": "Reception",
+    "address": "Address:",
+    "salesDepartment": "Sales Department",
+    "supplyDepartment": "Supply Department"
+  },
+  "contactForm": {
+    "title": "Contact Us",
+    "firstName": "Your First Name*",
+    "lastName": "Your Last Name*",
+    "phone": "Your Phone Number*",
+    "email": "Your Email*",
+    "company": "Company*",
+    "country": "Country",
+    "market": "Market",
+    "message": "Your Message",
+    "submit": "Submit"
+  },
+  "about": {
+    "first": {
+      "slogan": "Public Joint Stock Company ‘Rokitno Glass Factory’ – a modern high-tech enterprise and your reliable partner!",
+      "companyInfo": {
+        "first": "Public Joint Stock Company ‘Rokitno Glass Factory’ has been manufacturing glass containers for various industries since 1898. Our factory has a rich history and is one of the oldest glass factories in Ukraine.",
+        "second": "We provide our clients with modern, high-quality packaging solutions that meet all market requirements."
+      }
+    },
+    "second": {
+      "title": "Company Objectives",
+      "content": [
+        "Ensure high quality of products, meeting international standards.",
+        "Implement innovative technologies and modernize production processes.",
+        "Provide prompt and reliable service to clients."
+      ]
+    },
+    "third": {
+      "title": "Our Mission",
+      "content": [
+        "To be a leader in the glass packaging industry, providing our clients with the best products and services.",
+        "To focus on environmental sustainability and responsible production.",
+        "To build long-term relationships with partners based on trust and cooperation."
+      ]
+    }
+  },
+  "footer": {
+    "contacts": "Contacts",
+    "about": "About Us",
+    "products": "Products",
+    "send": "Send",
+    "rights": "© 2024 Rokitno Glass Factory. All rights reserved."
+  }
+}
