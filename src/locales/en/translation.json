@@ -2,46 +2,50 @@
   "header": {
     "main": "Home",
     "about": "About Us",
-    "production": "Production",
+    "production": "Products",
     "shareholders": "For Shareholders",
     "contacts": "Contacts",
-    "slogan": "Rokitno Glass Factory"
+    "slogan": "Rokytne Glass Factory"
+  },
+  "tabs": {
+    "cert": "Certification",
+    "tender": "Tenders"
   },
   "main": {
     "hero": {
-      "label": "year of establishment",
+      "label": "year of foundation",
       "slogan": "We manufacture and deliver",
       "tag": "Glass as a work of art"
     },
     "glass": {
-      "title": "Why Glass?",
-      "text_content": "First of all, glass is the ideal material for storing beverages, as it does not interact with their composition, thus preserving the unparalleled taste and quality of the drink throughout its shelf life.",
-      "text_content_second": "Additionally, glass has a high degree of recyclability and environmental cleanliness. Unlike plastic, which is often used for packaging materials, glass can be fully recycled without losing its quality. This helps reduce negative environmental impact and promotes sustainable production.",
-      "slogan": "Preserving the unique taste for every manufacturer!"
+      "title": "Why glass?",
+      "text_content": "First and foremost, glass is the ideal material for storing beverages, as it does not interact with their composition, thus preserving the unparalleled taste and quality of the beverage throughout the entire shelf life.",
+      "text_content_second": "Moreover, glass has a high degree of recyclability and environmental friendliness. Unlike plastic, which is often used for packaging, glass can be fully recycled without losing its quality. This helps reduce the negative impact on the environment and contributes to the sustainable development of production.",
+      "slogan": "We preserve the unique taste for every manufacturer!"
     },
     "history": {
-      "title": "We are over 125 years old",
-      "top_description": "With many years of experience in glassmaking, a favorable location of quartz sand quarries, and systematic technical improvements in the production process, the public joint-stock company ‘Rokitno Glass Factory’, operating since 1898, successfully ranks among the top three producers of glass bottles in Ukraine.",
+      "title": "Over 125 years in business",
+      "top_description": "Thanks to many years of experience in glassmaking, the advantageous location of quartz sand quarries, and the systematic technical improvement of the production process, JSC 'Rokytne Glass Factory,' operating since 1898, ranks among the top three glass bottle manufacturers in Ukraine.",
       "left_side": "We cover all risks",
-      "bottom_description": "Although it is rare, unforeseen circumstances may affect delivery. Even in such situations, we are ready to resolve all misunderstandings, even in the event of emergencies."
+      "bottom_description": "Although rare, unforeseen circumstances may arise that could affect delivery. Even in such situations, we are ready to resolve any misunderstandings, even in the face of extraordinary circumstances."
     },
     "wine": {
       "slider": {
         "first": "Beer Packaging",
         "second": "Wine Packaging",
         "third": "Mineral Water Packaging",
-        "fourth": "Packaging for Chemical Liquids"
+        "fourth": "Chemical Liquid Packaging"
       },
       "slogan": "Glass as a work of art"
     },
     "global": {
       "title": {
-        "first": "Global network of partners from around the world",
+        "first": "A global network of partners from around the world",
         "second": "Our Advantages"
       },
       "description": {
-        "first": "Our company has a high level of trust from other countries. This recognition indicates the reliability and quality of our products and services, making us a dependable partner in international relations.",
-        "second": "We provide unique advantages that make us a reliable partner for our clients and customers."
+        "first": "Our company enjoys a high level of trust from other countries. This recognition speaks to the reliability and quality of our products and services, making us a trusted partner in international relations.",
+        "second": "We offer unique advantages that make us a reliable partner for our clients and buyers."
       },
       "partner": {
         "netherlands": "Netherlands",
@@ -56,12 +60,12 @@
         "estonia": "Estonia",
         "finland": "Finland",
         "lithuania": "Lithuania",
-        "title": "Our partners include countries such as:"
+        "title": "Among our partners are countries such as:"
       },
       "advantages": {
-        "first": "We integrate into new projects quickly, ensuring effective collaboration with partners.",
-        "second": "We always find a compromise with each buyer, taking their needs and wishes into account.",
-        "third": "Meeting our obligations to supply products is our top priority, even in case of force majeure."
+        "first": "We integrate into new projects quickly, ensuring efficient cooperation with partners.",
+        "second": "We always find a compromise with every buyer, taking into account their needs and preferences.",
+        "third": "Fulfilling our commitments to supply products is our top priority, even in force majeure situations."
       }
     }
   },
@@ -107,39 +111,39 @@
     "g": "g"
   },
   "product": {
-    "title": "Our Production Products",
+    "title": "Products of Our Production",
     "factoryImageAlt": "Factory production line",
-    "highlight": "The enterprise specializes in producing exclusive glass containers that modern consumers require.",
-    "description1": "The factory's products meet European quality standards and can satisfy the most discerning tastes. Our enterprise develops bottle shapes according to the wishes and requests of clients.",
-    "description2": "The company specializes in producing bottles in green and brown glass ranging from 0.2 to 1.0 liters. The public joint-stock company 'Rokitno Glass Factory' has about 50 proprietary bottle designs.",
+    "highlight": "The enterprise specializes in the production of exclusive glass containers demanded by the modern consumer.",
+    "description1": "The plant's products meet European quality standards and can satisfy the most demanding tastes. Our company develops bottle shapes according to the wishes and requests of our clients.",
+    "description2": "The company specializes in producing bottles in green and brown glass with capacities ranging from 0.2 to 1.0 liters. PJSC 'Rokytne Glass Factory' has about 50 of its own bottle designs.",
     "qualityTitle": "Product Quality",
-    "qualityDescription": "– is the highest priority of our operations! This postulate is the foundation of the entire enterprise's work. The pursuit of improving consumer properties is a predominant direction towards our goal.",
-    "timelinessTitle": "The most accurate fulfillment of customer wishes in the shortest time",
-    "timelinessDescription": "– is an important feature that customers choose our enterprise for. Only with us can you go from the first inquiry to receiving trial samples of new products in three days.",
-    "improvement": "The pursuit of constant improvement in technology provides the opportunity to produce higher quality products while maintaining a balance of cost. This is the foundation of development and confidence in the future.",
-    "experience": "The long-standing experience of the enterprise, preservation and improvement of traditions, confirmed by the work of labor dynasties within the team, ensures quality that is demanded worldwide.",
+    "qualityDescription": "– the top priority of our activity! This principle is the foundation of the entire enterprise. Improving consumer properties is the primary focus of our progress.",
+    "timelinessTitle": "Most Accurate Fulfillment of Customer Requests in the Shortest Time",
+    "timelinessDescription": "– this is an important feature for which our company is chosen. Only with us can you go from the first contact to receiving prototype samples of new products in just three days.",
+    "improvement": "Striving for constant technological improvement ensures the production of higher quality products while maintaining cost balance. This is the foundation of development and confidence in the future.",
+    "experience": "The company's century-long experience, the preservation, and enhancement of traditions supported by the work of labor dynasties in the team ensure the quality that is in demand worldwide.",
     "specifications": "Specifications",
     "packaging": "Packaging",
     "pack": {
       "bottlesPerPallet": {
         "label": "Number of bottles per pallet",
-        "alt": "Icon for number of bottles per pallet"
+        "alt": "Icon for the number of bottles per pallet"
       },
       "rowsPerPallet": {
         "label": "Number of rows per pallet",
-        "alt": "Icon for number of rows per pallet"
+        "alt": "Icon for the number of rows per pallet"
       },
       "bottlesPerRow": {
         "label": "Number of bottles per row",
-        "alt": "Icon for number of bottles per row"
+        "alt": "Icon for the number of bottles per row"
       },
       "palletWeight": {
         "label": "Pallet weight",
         "alt": "Icon for pallet weight"
       },
       "palletSize": {
-        "label": "Pallet dimensions",
-        "alt": "Icon for pallet dimensions"
+        "label": "Pallet size",
+        "alt": "Icon for pallet size"
       }
     },
     "spec": {
@@ -160,22 +164,22 @@
         "alt": "Icon for weight"
       },
       "glassColor": {
-        "label": "Glass Color",
+        "label": "Glass color",
         "alt": "Icon for glass color"
       },
       "corkType": {
-        "label": "Type of Cap",
-        "alt": "Icon for type of cap"
+        "label": "Cork type",
+        "alt": "Icon for cork type"
       },
       "circulationType": {
-        "label": "Type of Circulation",
-        "alt": "Icon for type of circulation"
+        "label": "Circulation type",
+        "alt": "Icon for circulation type"
       }
     },
     "nominal": "Nominal",
     "full": "Full",
     "greenBrown": "Green/Brown",
-    "capType": "Type of Cap",
+    "capType": "Cap Type",
     "crownCap": "Crown Cap",
     "recirculating": "Recirculating"
   },
@@ -200,34 +204,76 @@
   },
   "about": {
     "first": {
-      "slogan": "Public Joint Stock Company ‘Rokitno Glass Factory’ – a modern high-tech enterprise and your reliable partner!",
+      "slogan": "PJSC 'Rokytne Glass Factory' – a modern, highly developed enterprise and your reliable partner!",
       "companyInfo": {
-        "first": "Public Joint Stock Company ‘Rokitno Glass Factory’ has been manufacturing glass containers for various industries since 1898. Our factory has a rich history and is one of the oldest glass factories in Ukraine.",
-        "second": "We provide our clients with modern, high-quality packaging solutions that meet all market requirements."
-      }
+        "first": "One of the leading manufacturers in Ukraine's glass container industry is PJSC 'Rokytne Glass Factory', which has been operating since 1898.",
+        "second": "Our company develops bottle shapes based on the preferences and requests of clients. The company specializes in producing bottles in green and brown glass with capacities ranging from 0.2 to 1.0 liters.\nThe plant has about 50 of its own bottle designs and produces glass containers for beer, spirits, wine, cognac, low-alcohol, non-alcoholic, and juice drinks."
+      },
+      "clients": {
+        "title": "The main consumers of the company's products are the following well-known companies and brands:",
+        "button": "more",
+        "clientsList": [
+          { "name": "PJSC 'Carlsberg'" },
+          { "name": "PJSC 'Obolon'" },
+          { "name": "LLC TVK 'First Private Brewery \"For People – As For Themselves\"'" },
+          { "name": "PJSC 'Radomyshl Brewery'" },
+          { "name": "LLC 'Poltava Beer'" },
+          { "name": "LLC 'Berdychiv Brewery'" },
+          { "name": "PJSC 'Khmelnytsky Brewery'" },
+          { "name": "LLC 'Riven'" },
+          { "name": "LLC 'Pavliv Brewery'" },
+          { "name": "LLC 'Lysychansk Brewery'" },
+          { "name": "TM 'Morshynska'" },
+          { "name": "LLC 'Aqua-Polyana'" }
+        ]
+      },
+      "title": "The plant's products meet European quality standards and are exported abroad:"
     },
     "second": {
-      "title": "Company Objectives",
-      "content": [
-        "Ensure high quality of products, meeting international standards.",
-        "Implement innovative technologies and modernize production processes.",
-        "Provide prompt and reliable service to clients."
-      ]
+      "info": {
+        "title": "Certification",
+        "description": "Through a gradual marketing strategy, we ensure maximum control over the glass container market in Ukraine and abroad. The principles we declare and the goals we set are achieved through the quality management system, implemented and certified on September 27, 2011. This system was developed according to the requirements of the international standard <strong>ISO 9001:2008</strong>. On November 25, 2016, the enterprise successfully passed certification according to the requirements of the international standard FSSC 22000:2015 and received a certificate issued by the certification body TUV Thuringene.V.",
+        "certificate": "Quality Certificate",
+        "subtitle": "Currently, the plant operates under ISO 9001:2015; FSSC 22000 (v.5.1).",
+        "isuabvs": "Based on the above two standards, PJSC 'Rokytne Glass Factory' operates the <strong>Integrated Quality and Safety Management System for Glassware Production (IQSMS)</strong>.",
+        "structure": "IQSMS is part of the organizational structure of PJSC 'Rokytne Glass Factory', functioning alongside all other types of activities, ensuring high-quality and rhythmic processes at all stages of the product life cycle."
+      },
+      "features": {
+        "quality": {
+          "title": "Product Quality",
+          "description": "Improving consumer properties is the primary focus of our progress."
+        },
+        "precision": {
+          "title": "Precise Fulfillment",
+          "description": "We offer the fastest turnaround from initial contact to receiving new product samples."
+        },
+        "technology": {
+          "title": "Technological Improvement",
+          "description": "We ensure the production of higher quality products while maintaining cost balance."
+        },
+        "experience": {
+          "title": "Generational Experience",
+          "description": "Preserving and enhancing traditions ensures worldwide-demanded quality."
+        }
+      }
     },
     "third": {
-      "title": "Our Mission",
-      "content": [
-        "To be a leader in the glass packaging industry, providing our clients with the best products and services.",
-        "To focus on environmental sustainability and responsible production.",
-        "To build long-term relationships with partners based on trust and cooperation."
-      ]
+      "title": "Tenders",
+      "inst": "Instructions for Participants"
     }
   },
-  "footer": {
-    "contacts": "Contacts",
-    "about": "About Us",
-    "products": "Products",
-    "send": "Send",
-    "rights": "© 2024 Rokitno Glass Factory. All rights reserved."
+  "shareholders": {
+    "title": "Information for Shareholders and Stakeholders Published Before 01.01.2024",
+    "info": "\"Information for shareholders and stakeholders\" is posted on the website:",
+    "articles": {
+      "offer": {
+        "title": "Public Irrevocable Offer to Purchase Shares of PJSC 'ROKYTNE GLASS FACTORY'",
+        "content": "In compliance with p. 4 Article 93. Section XI of the Law of Ukraine 'On Joint Stock Companies' (No. 2465-IX dated July 27, 2022), PRIVATE JOINT-STOCK COMPANY 'ROKYTNE GLASS FACTORY' announces the receipt of a public irrevocable offer (offer) to shareholders on October 20, 2023..."
+      },
+      "acquisition": {
+        "title": "Information on the Acquisition of a Controlling Stake in the Company",
+        "content": "PJSC 'ROKYTNE GLASS FACTORY' announces that on September 29, 2023, it received information from the shareholder JSC 'ZNVKIF 'CAPITAL GROUP COMPANY' regarding the acquisition of a controlling stake in the company..."
+      }
+    }
   }
 }

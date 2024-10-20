@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './Tabs.module.css';
+import {useTranslation} from "react-i18next";
 
 const Tabs = ({ activeTab, onTabClick }) => {
+    const {t} = useTranslation();
     return (
         <div className={styles.tabsContainer} role="tablist">
             <button
@@ -10,7 +12,7 @@ const Tabs = ({ activeTab, onTabClick }) => {
                 aria-selected={activeTab === 'first'}
                 onClick={() => onTabClick('first')}
             >
-                Про нас
+                {t('header.about')}
             </button>
             <button
                 className={`${styles.tab} ${activeTab === 'second' ? styles.activeTab : ''}`}
@@ -18,7 +20,7 @@ const Tabs = ({ activeTab, onTabClick }) => {
                 aria-selected={activeTab === 'second'}
                 onClick={() => onTabClick('second')}
             >
-                Сертифікація
+                {t('tabs.cert')}
             </button>
             <button
                 className={`${styles.tab} ${activeTab === 'third' ? styles.activeTab : ''}`}
@@ -26,7 +28,7 @@ const Tabs = ({ activeTab, onTabClick }) => {
                 aria-selected={activeTab === 'third'}
                 onClick={() => onTabClick('third')}
             >
-                Тендери
+                {t('tabs.tender')}
             </button>
         </div>
     );

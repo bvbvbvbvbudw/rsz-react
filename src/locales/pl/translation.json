@@ -1,5 +1,266 @@
 {
   "header": {
-    "main": "Test PL"
+    "main": "Strona główna",
+    "about": "O nas",
+    "production": "Produkty",
+    "shareholders": "Akcjonariuszom",
+    "contacts": "Kontakty",
+    "slogan": "Rokitniański Zakład Szkła"
+  },
+  "tabs": {
+    "cert": "Certyfikacja",
+    "tender": "Przetargi"
+  },
+  "main": {
+    "hero": {
+      "label": "rok założenia",
+      "slogan": "Produkujemy i dostarczamy",
+      "tag": "Szkło jako dzieło sztuki"
+    },
+    "glass": {
+      "title": "Dlaczego szkło?",
+      "text_content": "Przede wszystkim szkło jest idealnym materiałem do przechowywania napojów, ponieważ nie wchodzi w interakcję z ich składem, co pozwala zachować niezrównany smak i jakość napoju przez cały czas przechowywania.",
+      "text_content_second": "Ponadto szkło ma wysoki stopień recyklingu i ekologicznej czystości. W przeciwieństwie do plastiku, z którego często produkowane są materiały opakowaniowe, szkło można w pełni przetwarzać bez utraty jego jakości. Pomaga to zmniejszyć negatywny wpływ na środowisko i sprzyja zrównoważonemu rozwojowi produkcji.",
+      "slogan": "Zachowujemy wyjątkowy smak dla każdego producenta!"
+    },
+    "history": {
+      "title": "Mamy ponad 125 lat",
+      "top_description": "Dzięki wieloletniemu doświadczeniu w branży szkła, korzystnemu położeniu złóż piasku kwarcowego oraz systematycznemu doskonaleniu procesu produkcji, Przedsiębiorstwo 'Rokitniański Zakład Szkła', działające od 1898 roku, z powodzeniem znajduje się w czołówce producentów butelek szklanych na Ukrainie.",
+      "left_side": "Pokrywamy wszystkie ryzyka",
+      "bottom_description": "Chociaż rzadko, możliwe są nieprzewidziane okoliczności, które mogą wpłynąć na dostawę. Nawet w takich sytuacjach jesteśmy gotowi rozwiązać wszelkie nieporozumienia, nawet w warunkach wystąpienia nadzwyczajnych okoliczności."
+    },
+    "wine": {
+      "slider": {
+        "first": "Opakowanie na piwo",
+        "second": "Opakowanie na wino",
+        "third": "Opakowanie na wodę mineralną",
+        "fourth": "Opakowanie na płyny chemiczne"
+      },
+      "slogan": "Szkło jako dzieło sztuki"
+    },
+    "global": {
+      "title": {
+        "first": "Globalna sieć partnerów z innych krajów",
+        "second": "Nasze zalety"
+      },
+      "description": {
+        "first": "Nasza firma cieszy się wysokim poziomem zaufania ze strony innych krajów. To uznanie świadczy o niezawodności i jakości naszych produktów i usług, co czyni nas wiarygodnym partnerem w międzynarodowych relacjach.",
+        "second": "Oferujemy unikalne zalety, które czynią nas niezawodnym partnerem dla naszych klientów i nabywców."
+      },
+      "partner": {
+        "netherlands": "Holandia",
+        "sweden": "Szwecja",
+        "latvia": "Łotwa",
+        "italy": "Włochy",
+        "belgium": "Belgia",
+        "norway": "Norwegia",
+        "romania": "Rumunia",
+        "spain": "Hiszpania",
+        "france": "Francja",
+        "estonia": "Estonia",
+        "finland": "Finlandia",
+        "lithuania": "Litwa",
+        "title": "Wśród naszych partnerów znajdują się takie kraje jak:"
+      },
+      "advantages": {
+        "first": "Szybko integrujemy się w nowe projekty, zapewniając efektywną współpracę z partnerami.",
+        "second": "Zawsze znajdujemy kompromis z każdym nabywcą, uwzględniając ich potrzeby i życzenia.",
+        "third": "Wypełnianie zobowiązań dotyczących dostaw produktów jest naszym priorytetem, nawet w warunkach siły wyższej."
+      }
+    }
+  },
+  "products": {
+    "beerPackaging": "Opakowanie na piwo",
+    "standardBeerPackaging": "Standardowe opakowanie na piwo",
+    "exclusiveBeerPackaging": "Ekskluzywne opakowanie na piwo",
+    "winePackaging": "Opakowanie na wino",
+    "standardWinePackaging": "Standardowe opakowanie na wino",
+    "exclusiveWinePackaging": "Ekskluzywne opakowanie na wino",
+    "chemicalLiquidPackaging": "Opakowanie na płyny chemiczne",
+    "standardChemicalLiquidPackaging": "Standardowe opakowanie na płyny chemiczne",
+    "otherPackaging": "Inne opakowania",
+    "standardOtherPackaging": "Standardowe inne opakowania",
+    "exclusiveOtherPackaging": "Ekskluzywne inne opakowania"
+  },
+  "filters": {
+    "clearFilters": "czyść filtry",
+    "categories": "Kategorie:",
+    "typeOfContainer": "Rodzaj pojemnika:",
+    "typeOfCap": "Rodzaj zakrętki:",
+    "color": "Kolor:",
+    "characteristics": "Charakterystyki:",
+    "volume": "Objętość (ml):",
+    "height": "Wysokość (mm):",
+    "diameter": "Średnica (mm):",
+    "weight": "Waga (g):",
+    "beer": "Dla piwa",
+    "wine": "Dla wina",
+    "water": "Dla wody mineralnej",
+    "chemicals": "Dla płynów chemicznych",
+    "typical": "Typowe",
+    "exclusive": "Ekskluzywne",
+    "crown": "Kapsel",
+    "kpsh": "KPSH",
+    "p295": "P-29.5",
+    "pr335": "PR-33.5",
+    "green": "Zielony",
+    "brown": "Brązowy",
+    "kg": "kg",
+    "mm": "mm",
+    "ml": "ml",
+    "g": "g"
+  },
+  "product": {
+    "title": "Produkcja naszego zakładu",
+    "factoryImageAlt": "Linia produkcyjna fabryki",
+    "highlight": "Przedsiębiorstwo specjalizuje się w produkcji ekskluzywnego szkła opakowaniowego, które jest potrzebne nowoczesnemu konsumentowi.",
+    "description1": "Produkty fabryki spełniają europejskie standardy jakości i są w stanie zaspokoić najbardziej wymagające gusta. Nasze przedsiębiorstwo opracowuje kształty butelek według życzeń i zapytań klientów.",
+    "description2": "Towarzystwo specjalizuje się w produkcji butelek w zielonym i brązowym kolorze szkła o pojemności od 0,2 do 1,0 litra. Przedsiębiorstwo 'Rokitnoński Zakład Szkła' ma w swoim dorobku około 50 własnych projektów butelek.",
+    "qualityTitle": "Jakość produktów",
+    "qualityDescription": "– najwyższy priorytet działalności! Na tym postulacie opiera się praca całego przedsiębiorstwa. Dążenie do poprawy właściwości konsumpcyjnych jest dominującym kierunkiem działań.",
+    "timelinessTitle": "Najbardziej precyzyjne realizowanie życzeń klientów w najkrótszym czasie",
+    "timelinessDescription": "– to ważna cecha, według której wybierają nasze przedsiębiorstwo. Tylko u nas można przejść drogę od pierwszego kontaktu do otrzymania próbnych próbek nowego produktu w ciągu trzech dni.",
+    "improvement": "Dążenie do ciągłego doskonalenia technologii zapewnia możliwość produkcji wyrobów o wyższej jakości przy zachowaniu równowagi kosztów. To jest podstawą rozwoju i pewności w przyszłość.",
+    "experience": "Wieloletnie doświadczenie przedsiębiorstwa, zachowanie i doskonalenie tradycji, potwierdzone pracą pokoleń kolektywu, zapewniają jakość, poszukiwaną na całym świecie.",
+    "specifications": "Specyfikacje",
+    "packaging": "Pakowanie",
+    "pack": {
+      "bottlesPerPallet": {
+        "label": "Liczba butelek na palecie",
+        "alt": "Ikona dla liczby butelek na palecie"
+      },
+      "rowsPerPallet": {
+        "label": "Liczba rzędów na palecie",
+        "alt": "Ikona dla liczby rzędów na palecie"
+      },
+      "bottlesPerRow": {
+        "label": "Liczba butelek w rzędzie",
+        "alt": "Ikona dla liczby butelek w rzędzie"
+      },
+      "palletWeight": {
+        "label": "Waga palety",
+        "alt": "Ikona dla wagi palety"
+      },
+      "palletSize": {
+        "label": "Rozmiary palety",
+        "alt": "Ikona dla rozmiarów palety"
+      }
+    },
+    "spec": {
+      "capacity": {
+        "label": "Pojemność",
+        "alt": "Ikona dla pojemności"
+      },
+      "height": {
+        "label": "Wysokość",
+        "alt": "Ikona dla wysokości"
+      },
+      "diameter": {
+        "label": "Średnica",
+        "alt": "Ikona dla średnicy"
+      },
+      "weight": {
+        "label": "Waga",
+        "alt": "Ikona dla wagi"
+      },
+      "glassColor": {
+        "label": "Kolor szkła",
+        "alt": "Ikona dla koloru szkła"
+      },
+      "corkType": {
+        "label": "Typ korka",
+        "alt": "Ikona dla typu korka"
+      },
+      "circulationType": {
+        "label": "Typ obiegu",
+        "alt": "Ikona dla typu obiegu"
+      }
+    },
+    "nominal": "Nominał",
+    "full": "Pełny",
+    "greenBrown": "Zielony/Braun",
+    "capType": "Typ korka",
+    "crownCap": "Kapsel",
+    "recirculating": "Obiegowy"
+  },
+  "contact": {
+    "title": "Kontakty",
+    "reception": "Recepcja",
+    "address": "Adres:",
+    "salesDepartment": "Dział sprzedaży gotowych produktów",
+    "supplyDepartment": "Dział zaopatrzenia"
+  },
+  "contactForm": {
+    "title": "Skontaktuj się z nami",
+    "firstName": "Twoje imię*",
+    "lastName": "Twoje nazwisko*",
+    "phone": "Twój numer telefonu*",
+    "email": "Twój Email*",
+    "company": "Firma*",
+    "country": "Kraj",
+    "market": "Rynek",
+    "message": "Twoja wiadomość",
+    "submit": "Wyślij"
+  },
+  "about": {
+    "first": {
+      "slogan": "Przedsiębiorstwo 'Rokitnoński Zakład Szkła' – to nowoczesne, wysoko rozwinięte przedsiębiorstwo i Twój niezawodny partner!",
+      "companyInfo": {
+        "first": "Jednym z wiodących producentów w ukraińskim przemyśle szkła opakowaniowego jest Przedsiębiorstwo 'Rokitnoński Zakład Szkła', które prowadzi swoją historię od 1898 roku.",
+        "second": "Nasze przedsiębiorstwo opracowuje kształty butelek według życzeń i zapytań klientów. Towarzystwo specjalizuje się w produkcji butelek w zielonych i brązowych kolorach szkła o pojemności od 0,2 do 1,0 litra.\nZakład ma w swoim dorobku około 50 własnych projektów butelek i produkuje szkło opakowaniowe dla piwa, napojów spirytusowych, win, koniaków, napojów słaboalkoholowych, bezalkoholowych oraz soków."
+      },
+      "clients": {
+        "title": "Głównymi konsumentami produktów przedsiębiorstwa są takie znane firmy i marki:",
+        "button": "więcej",
+        "clientsList": [
+          {
+            "name": "PAT 'Carlsberg'"
+          },
+          {
+            "name": "PAT 'Obolon'"
+          },
+          {
+            "name": "TOO TVK 'Pierwsza Prywatna Browarnia 'Dla ludzi – jak dla siebie'"
+          },
+          {
+            "name": "PAT 'PBC 'Radomyśl'"
+          },
+          {
+            "name": "TOO 'Poltavpivo'"
+          },
+          {
+            "name": "TzOV 'Berdyczowski Zakład Piwowarski'"
+          },
+          {
+            "name": "PAT 'Chmielnicki Zakład Piwowarski'"
+          },
+          {
+            "name": "TOO 'Poziom'"
+          },
+          {
+            "name": "TzOV 'Pawliwski Zakład Piwowarski'"
+          },
+          {
+            "name": "TOO 'Lysyczansky Zakład Piwowarski'"
+          },
+          {
+            "name": "TM 'Morszyńska'"
+          },
+          {
+            "name": "TOO 'Aqua-Połana'"
+          }
+        ]
+      },
+      "title": "Produkty fabryki spełniają europejskie standardy jakości i są eksportowane za granicę:"
+    },
+    "second": {
+      "info": {
+        "title": "Certyfikacja",
+        "description": "Dzięki stopniowej strategii marketingowej zapewnić maksymalną kontrolę nad rynkiem sprzedaży szkła opakowaniowego w Ukrainie i za granicą. Zapewnienie zadeklarowanych przez nas zasad oraz realizacja celów osiągane są dzięki wprowadzonemu i certyfikowanemu 27 września 2011 roku systemowi zarządzania jakością. System ten został opracowany zgodnie z wymaganiami międzynarodowego standardu <strong>DSTU ISO 9001:2008</strong>. 25 listopada 2016 roku przedsiębiorstwo pomyślnie przeszło certyfikację zgodnie z wymaganiami międzynarodowego standardu FSSC 22000:2015 i otrzymało certyfikat, który potwierdza działanie systemu w przedsiębiorstwie, wydany przez organ certyfikacji TUV Thuringen e.V.",
+        "certificate": "Certyfikat jakości",
+        "subtitle": "Na dzień dzisiejszy w przedsiębiorstwie obowiązuje ISO 9001:2015; FSSC 22000 (v.5.1).",
+        "isuabvs": "Na podstawie dwóch wyżej wymienionych standardów w przedsiębiorstwie Przedsiębiorstwo 'Rokitnoński Zakład Szkła' wprowadziło nowe zaawansowane procedury zarządzania, które nie tylko podnoszą jakość produkcji, ale również znacznie obniżają koszty. Główne cele standardów to minimalizacja ryzyka zdrowotnego dla klientów, ochrona zdrowia konsumentów oraz zapewnienie zadowolenia klientów."
+      }
+    }
   }
 }

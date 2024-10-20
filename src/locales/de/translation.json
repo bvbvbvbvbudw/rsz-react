@@ -1,5 +1,279 @@
 {
   "header": {
-    "main": "Test De"
+    "main": "Startseite",
+    "about": "Über uns",
+    "production": "Produktion",
+    "shareholders": "Für Aktionäre",
+    "contacts": "Kontakte",
+    "slogan": "Rokytne Glasfabrik"
+  },
+  "tabs": {
+    "cert": "Zertifizierung",
+    "tender": "Ausschreibungen"
+  },
+  "main": {
+    "hero": {
+      "label": "Gründungsjahr",
+      "slogan": "Wir produzieren und liefern",
+      "tag": "Glas als Kunstwerk"
+    },
+    "glass": {
+      "title": "Warum Glas?",
+      "text_content": "Glas ist das ideale Material zur Aufbewahrung von Getränken, da es nicht mit deren Inhaltsstoffen interagiert und so den unvergleichlichen Geschmack und die Qualität des Getränks während der gesamten Lagerzeit bewahrt.",
+      "text_content_second": "Darüber hinaus ist Glas äußerst recycelbar und umweltfreundlich. Im Gegensatz zu Kunststoff, der häufig für Verpackungen verwendet wird, kann Glas vollständig recycelt werden, ohne seine Qualität zu verlieren. Dies trägt dazu bei, die negativen Auswirkungen auf die Umwelt zu verringern und fördert eine nachhaltige Produktion.",
+      "slogan": "Wir bewahren den einzigartigen Geschmack für jeden Hersteller!"
+    },
+    "history": {
+      "title": "Über 125 Jahre Erfahrung",
+      "top_description": "Dank unserer langjährigen Erfahrung in der Glasherstellung, der günstigen Lage der Quarzsandsteinbrüche und der kontinuierlichen technischen Verbesserung der Produktionsprozesse gehört die Rokytne Glasfabrik AG, die seit 1898 besteht, zu den führenden Glasflaschenherstellern in der Ukraine.",
+      "left_side": "Wir decken alle Risiken ab",
+      "bottom_description": "Auch wenn selten, können unvorhergesehene Umstände die Lieferung beeinträchtigen. Selbst in solchen Fällen sind wir bereit, alle Missverständnisse zu klären, auch unter außergewöhnlichen Bedingungen."
+    },
+    "wine": {
+      "slider": {
+        "first": "Bierverpackung",
+        "second": "Weinverpackung",
+        "third": "Verpackung für Mineralwasser",
+        "fourth": "Verpackung für chemische Flüssigkeiten"
+      },
+      "slogan": "Glas als Kunstwerk"
+    },
+    "global": {
+      "title": {
+        "first": "Globales Partnernetzwerk aus verschiedenen Ländern",
+        "second": "Unsere Vorteile"
+      },
+      "description": {
+        "first": "Unser Unternehmen genießt ein hohes Maß an Vertrauen aus anderen Ländern. Diese Anerkennung bestätigt die Zuverlässigkeit und Qualität unserer Produkte und Dienstleistungen, was uns zu einem vertrauenswürdigen Partner in internationalen Beziehungen macht.",
+        "second": "Wir bieten einzigartige Vorteile, die uns zu einem verlässlichen Partner für unsere Kunden und Käufer machen."
+      },
+      "partner": {
+        "netherlands": "Niederlande",
+        "sweden": "Schweden",
+        "latvia": "Lettland",
+        "italy": "Italien",
+        "belgium": "Belgien",
+        "norway": "Norwegen",
+        "romania": "Rumänien",
+        "spain": "Spanien",
+        "france": "Frankreich",
+        "estonia": "Estland",
+        "finland": "Finnland",
+        "lithuania": "Litauen",
+        "title": "Unter unseren Partnerländern sind:"
+      },
+      "advantages": {
+        "first": "Wir integrieren uns schnell in neue Projekte und sorgen für eine effektive Zusammenarbeit mit unseren Partnern.",
+        "second": "Wir finden immer einen Kompromiss mit jedem Käufer und berücksichtigen ihre Bedürfnisse und Wünsche.",
+        "third": "Die Erfüllung unserer Verpflichtungen zur Lieferung von Produkten steht an erster Stelle, auch unter außergewöhnlichen Umständen."
+      }
+    }
+  },
+  "products": {
+    "beerPackaging": "Bierverpackung",
+    "standardBeerPackaging": "Standard-Bierverpackung",
+    "exclusiveBeerPackaging": "Exklusive Bierverpackung",
+    "winePackaging": "Weinverpackung",
+    "standardWinePackaging": "Standard-Weinverpackung",
+    "exclusiveWinePackaging": "Exklusive Weinverpackung",
+    "chemicalLiquidPackaging": "Verpackung für chemische Flüssigkeiten",
+    "standardChemicalLiquidPackaging": "Standard-Verpackung für chemische Flüssigkeiten",
+    "otherPackaging": "Sonstige Verpackungen",
+    "standardOtherPackaging": "Standard-Verpackung für andere Flüssigkeiten",
+    "exclusiveOtherPackaging": "Exklusive Verpackung für andere Flüssigkeiten"
+  },
+  "filters": {
+    "clearFilters": "Filter löschen",
+    "categories": "Kategorien:",
+    "typeOfContainer": "Behältertyp:",
+    "typeOfCap": "Verschlusstyp:",
+    "color": "Farbe:",
+    "characteristics": "Eigenschaften:",
+    "volume": "Volumen (ml):",
+    "height": "Höhe (mm):",
+    "diameter": "Durchmesser (mm):",
+    "weight": "Gewicht (g):",
+    "beer": "Für Bier",
+    "wine": "Für Wein",
+    "water": "Für Mineralwasser",
+    "chemicals": "Für chemische Flüssigkeiten",
+    "typical": "Standard",
+    "exclusive": "Exklusiv",
+    "crown": "Kronkorken",
+    "kpsh": "KPSH",
+    "p295": "P-29.5",
+    "pr335": "PR-33.5",
+    "green": "Grün",
+    "brown": "Braun",
+    "kg": "kg",
+    "mm": "mm",
+    "ml": "ml",
+    "g": "g"
+  },
+  "product": {
+    "title": "Produkte unserer Produktion",
+    "factoryImageAlt": "Produktionslinie der Fabrik",
+    "highlight": "Das Unternehmen ist auf die Herstellung exklusiver Glasbehälter spezialisiert, die den Bedürfnissen des modernen Verbrauchers entsprechen.",
+    "description1": "Die Produkte der Anlage entsprechen den europäischen Qualitätsstandards und können die anspruchsvollsten Geschmäcker befriedigen. Unser Unternehmen entwickelt Flaschenformen nach den Wünschen und Anfragen unserer Kunden.",
+    "description2": "Das Unternehmen ist auf die Herstellung von Flaschen aus grünem und braunem Glas mit Kapazitäten von 0,2 bis 1,0 Litern spezialisiert. Die PJSC 'Rokytne Glasfabrik' verfügt über etwa 50 eigene Flaschendesigns.",
+    "qualityTitle": "Produktqualität",
+    "qualityDescription": "– die oberste Priorität unserer Tätigkeit! Dieses Prinzip ist die Grundlage des gesamten Unternehmens. Die Verbesserung der Verbraucherqualität ist der Hauptfokus unseres Fortschritts.",
+    "timelinessTitle": "Genaueste Erfüllung von Kundenwünschen in kürzester Zeit",
+    "timelinessDescription": "– dies ist ein wichtiger Aspekt, für den unser Unternehmen gewählt wird. Nur bei uns können Sie vom ersten Kontakt bis zum Erhalt von Prototypmustern neuer Produkte in nur drei Tagen gelangen.",
+    "improvement": "Das Streben nach kontinuierlicher technologischer Verbesserung gewährleistet die Herstellung von höherwertigen Produkten bei gleichzeitiger Wahrung des Kostenverhältnisses. Dies ist die Grundlage für Entwicklung und Zukunftssicherheit.",
+    "experience": "Die jahrhundertealte Erfahrung des Unternehmens, die Bewahrung und Weiterentwicklung von Traditionen, unterstützt durch die Arbeit von Arbeitsdynastien im Team, garantieren die Qualität, die weltweit gefragt ist.",
+    "specifications": "Spezifikationen",
+    "packaging": "Verpackung",
+    "pack": {
+      "bottlesPerPallet": {
+        "label": "Anzahl der Flaschen pro Palette",
+        "alt": "Symbol für die Anzahl der Flaschen pro Palette"
+      },
+      "rowsPerPallet": {
+        "label": "Anzahl der Reihen pro Palette",
+        "alt": "Symbol für die Anzahl der Reihen pro Palette"
+      },
+      "bottlesPerRow": {
+        "label": "Anzahl der Flaschen pro Reihe",
+        "alt": "Symbol für die Anzahl der Flaschen pro Reihe"
+      },
+      "palletWeight": {
+        "label": "Palettengewicht",
+        "alt": "Symbol für Palettengewicht"
+      },
+      "palletSize": {
+        "label": "Palettengröße",
+        "alt": "Symbol für Palettengröße"
+      }
+    },
+    "spec": {
+      "capacity": {
+        "label": "Kapazität",
+        "alt": "Symbol für Kapazität"
+      },
+      "height": {
+        "label": "Höhe",
+        "alt": "Symbol für Höhe"
+      },
+      "diameter": {
+        "label": "Durchmesser",
+        "alt": "Symbol für Durchmesser"
+      },
+      "weight": {
+        "label": "Gewicht",
+        "alt": "Symbol für Gewicht"
+      },
+      "glassColor": {
+        "label": "Glasfarbe",
+        "alt": "Symbol für Glasfarbe"
+      },
+      "corkType": {
+        "label": "Korkenart",
+        "alt": "Symbol für Korkenart"
+      },
+      "circulationType": {
+        "label": "Zirkulationstyp",
+        "alt": "Symbol für Zirkulationstyp"
+      }
+    },
+    "nominal": "Nennwert",
+    "full": "Voll",
+    "greenBrown": "Grün/Braun",
+    "capType": "Verschlussart",
+    "crownCap": "Kronenkorken",
+    "recirculating": "Wiederverwendbar"
+  },
+  "contact": {
+    "title": "Kontakte",
+    "reception": "Empfang",
+    "address": "Adresse:",
+    "salesDepartment": "Verkaufsabteilung",
+    "supplyDepartment": "Versorgungsabteilung"
+  },
+  "contactForm": {
+    "title": "Kontaktieren Sie uns",
+    "firstName": "Ihr Vorname*",
+    "lastName": "Ihr Nachname*",
+    "phone": "Ihre Telefonnummer*",
+    "email": "Ihre E-Mail*",
+    "company": "Unternehmen*",
+    "country": "Land",
+    "market": "Markt",
+    "message": "Ihre Nachricht",
+    "submit": "Absenden"
+  },
+  "about": {
+    "first": {
+      "slogan": "PJSC 'Rokytne Glasfabrik' – ein modernes, hoch entwickeltes Unternehmen und Ihr zuverlässiger Partner!",
+      "companyInfo": {
+        "first": "Einer der führenden Hersteller in der ukrainischen Glasbehälterindustrie ist die PJSC 'Rokytne Glasfabrik', die seit 1898 tätig ist.",
+        "second": "Unser Unternehmen entwickelt Flaschenformen nach den Vorlieben und Wünschen der Kunden. Das Unternehmen ist auf die Herstellung von Flaschen aus grünem und braunem Glas mit Kapazitäten von 0,2 bis 1,0 Litern spezialisiert.\nDie Anlage verfügt über etwa 50 eigene Flaschendesigns und produziert Glasbehälter für Bier, Spirituosen, Wein, Cognac, alkoholische Getränke, alkoholfreie Getränke und Säfte."
+      },
+      "clients": {
+        "title": "Die Hauptkonsumenten der Produkte des Unternehmens sind folgende bekannte Firmen und Marken:",
+        "button": "mehr",
+        "clientsList": [
+          { "name": "PJSC 'Carlsberg'" },
+          { "name": "PJSC 'Obolon'" },
+          { "name": "LLC TVK 'Erste private Brauerei „Für Menschen – wie für sich selbst“'" },
+          { "name": "PJSC 'Radomyshl Brauerei'" },
+          { "name": "LLC 'Poltava Bier'" },
+          { "name": "LLC 'Berdychiv Brauerei'" },
+          { "name": "PJSC 'Chmelnyzkyj Brauerei'" },
+          { "name": "LLC 'Riven'" },
+          { "name": "LLC 'Pavliv Brauerei'" },
+          { "name": "LLC 'Lysychansk Brauerei'" },
+          { "name": "TM 'Morshynska'" },
+          { "name": "LLC 'Aqua-Polyana'" }
+        ]
+      },
+      "title": "Die Produkte der Anlage entsprechen den europäischen Qualitätsstandards und werden ins Ausland exportiert:"
+    },
+    "second": {
+      "info": {
+        "title": "Zertifizierung",
+        "description": "Durch eine schrittweise Marketingstrategie gewährleisten wir maximale Kontrolle über den Markt für Glasbehälter in der Ukraine und im Ausland. Die von uns erklärten Prinzipien und die gesetzten Ziele werden durch das Qualitätsmanagementsystem erreicht, das am 27. September 2011 implementiert und zertifiziert wurde. Dieses System wurde gemäß den Anforderungen der internationalen Norm <strong>ISO 9001:2008</strong> entwickelt. Am 25. November 2016 bestand das Unternehmen erfolgreich die Zertifizierung nach den Anforderungen der internationalen Norm FSSC 22000:2015 und erhielt ein Zertifikat von der Zertifizierungsstelle TUV Thuringen e.V.",
+        "certificate": "Qualitätszertifikat",
+        "subtitle": "Derzeit arbeitet die Anlage nach ISO 9001:2015; FSSC 22000 (v.5.1).",
+        "isuabvs": "Auf der Grundlage der oben genannten zwei Standards betreibt die PJSC 'Rokytne Glasfabrik' das <strong>Integrierte Qualitäts- und Sicherheitsmanagementsystem für Glaswarenproduktion (IQSMS)</strong>.",
+        "structure": "IQSMS ist Teil der organisatorischen Struktur der PJSC 'Rokytne Glasfabrik' und funktioniert neben allen anderen Tätigkeiten, wodurch qualitativ hochwertige und rhythmische Prozesse in allen Phasen des Produktlebenszyklus gewährleistet werden."
+      },
+      "features": {
+        "quality": {
+          "title": "Produktqualität",
+          "description": "Die Verbesserung der Verbraucherqualität ist der Hauptfokus unseres Fortschritts."
+        },
+        "precision": {
+          "title": "Präzise Ausführung",
+          "description": "Wir bieten die schnellste Bearbeitungszeit vom ersten Kontakt bis zum Erhalt neuer Produktmuster."
+        },
+        "technology": {
+          "title": "Technologische Verbesserung",
+          "description": "Wir gewährleisten die Herstellung hochwertigerer Produkte bei gleichzeitiger Wahrung des Kostenverhältnisses."
+        },
+        "experience": {
+          "title": "Generationenübergreifende Erfahrung",
+          "description": "Die Bewahrung und Weiterentwicklung von Traditionen gewährleistet weltweit gefragte Qualität."
+        }
+      }
+    },
+    "third": {
+      "title": "Ausschreibungen",
+      "inst": "Anweisungen für Teilnehmer"
+    }
+  },
+  "shareholders": {
+    "title": "Informationen für Aktionäre und Stakeholder, veröffentlicht vor dem 01.01.2024",
+    "info": "\"Informationen für Aktionäre und Stakeholder\" ist auf der Website veröffentlicht:",
+    "articles": {
+      "offer": {
+        "title": "Öffentliches unwiderrufliches Angebot zum Kauf von Aktien der PJSC 'ROKYTNE GLASFABRIK'",
+        "content": "In Übereinstimmung mit Abschnitt 4 Artikel 93. Abschnitt XI des Gesetzes der Ukraine 'Über Aktiengesellschaften' (Nr. 2465-IX vom 27. Juli 2022) gibt die PRIVATE AKTIENGESELLSCHAFT 'ROKYTNE GLASFABRIK' am 20. Oktober 2023 den Erhalt eines öffentlichen unwiderruflichen Angebots (Angebot) an die Aktionäre bekannt..."
+      },
+      "acquisition": {
+        "title": "Informationen über den Erwerb einer Kontrollbeteiligung an der Gesellschaft",
+        "content": "Die PJSC 'ROKYTNE GLASFABRIK' gibt bekannt, dass sie am 29. September 2023 Informationen vom Aktionär JSC 'ZNVKIF 'CAPITAL GROUP COMPANY' über den Erwerb einer Kontrollbeteiligung an der Gesellschaft erhalten hat..."
+      }
+    }
   }
 }

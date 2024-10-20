@@ -279,7 +279,7 @@ const ProductFilter = () => {
                                         />
                                     </div>
                                     <div className={styles.rangeValues}>
-                                        {volumeRange[0]} мл - {volumeRange[1]} мл
+                                        {volumeRange[0]} {t('filters.ml')} - {volumeRange[1]} {t('filters.ml')}
                                     </div>
                                 </label>
 
@@ -302,7 +302,7 @@ const ProductFilter = () => {
                                         />
                                     </div>
                                     <div className={styles.rangeValues}>
-                                        {heightRange[0]} мм - {heightRange[1]} мм
+                                        {heightRange[0]} {t('filters.mm')} - {heightRange[1]} {t('filters.mm')}
                                     </div>
                                 </label>
 
@@ -325,7 +325,7 @@ const ProductFilter = () => {
                                         />
                                     </div>
                                     <div className={styles.rangeValues}>
-                                        {diameterRange[0]} мм - {diameterRange[1]} мм
+                                        {diameterRange[0]} {t('filters.mm')} - {diameterRange[1]} {t('filters.mm')}
                                     </div>
                                 </label>
 
@@ -348,7 +348,7 @@ const ProductFilter = () => {
                                         />
                                     </div>
                                     <div className={styles.rangeValues}>
-                                        {weightRange[0]} г - {weightRange[1]} г
+                                        {weightRange[0]} {t('filters.g')} - {weightRange[1]} {t('filters.g')}
                                     </div>
                                 </label>
                             </div>
